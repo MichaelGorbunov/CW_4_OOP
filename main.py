@@ -35,8 +35,11 @@ for item in data1:
     print(item["area"]["name"])#city
 print(type(data1))
 
-data2=JSONData(os.path.join(DATA_DIR, save_file_name+"_"+search_vacancy+".json"))
-data2.write_file(test_list)
+# data2=JSONData(os.path.join(DATA_DIR, save_file_name+"_"+search_vacancy+".json"))
+# data2.write_file(test_list)
+with open(os.path.join(DATA_DIR, save_file_name+"_"+search_vacancy+".json"), 'w', encoding='utf-8') as f:
+    json.dump(test_list, f, ensure_ascii=False, indent=4)
+
 
 #
 # for fname in os.listdir(DATA_DIR):
