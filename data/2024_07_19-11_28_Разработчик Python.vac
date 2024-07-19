@@ -1,0 +1,1002 @@
+[
+    {
+        "id": 102469377,
+        "name": "Разработчик Python",
+        "city": "Москва",
+        "salary_from": 800000,
+        "salary_to": 1000000,
+        "url": "https://api.hh.ru/vacancies/102469377?host=hh.ru",
+        "requirement": "Опыт работы с <highlighttext>Python</highlighttext> не менее 3 лет. Знание и опыт работы с OpenAI API. Опыт работы с веб-фреймворками...",
+        "responsibility": "Разработка и настройка моделей на базе OpenAI API. Сбор, очистка и анализ данных. Разработка серверной части приложения. Создание и поддержка..."
+    },
+    {
+        "id": 102678009,
+        "name": "Python разработчик (чат-боты)",
+        "city": "Санкт-Петербург",
+        "salary_from": 35000,
+        "salary_to": 50000,
+        "url": "https://api.hh.ru/vacancies/102678009?host=hh.ru",
+        "requirement": "Уверенные знания <highlighttext>Python</highlighttext> и Aiogram. Опыт работы с Docker compose. Навыки парсинга данных через <highlighttext>Python</highlighttext>. Опыт работы с системами контроля...",
+        "responsibility": "Разрабатывать и поддерживать функционал чат-бота в telegram. Писать и оптимизировать парсеры для сбора данных. Прилежно работать с системами контроля..."
+    },
+    {
+        "id": 102404974,
+        "name": "Стажер-разработчик Python",
+        "city": "Ростов-на-Дону",
+        "salary_from": 100000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/102404974?host=hh.ru",
+        "requirement": "Мы ищем <highlighttext>Python</highlighttext>-<highlighttext>разработчика</highlighttext>, уровнем от Junior и выше, желательно с опытом развития новых продуктов. Уверенные знания <highlighttext>Python</highlighttext> 3.8...",
+        "responsibility": null
+    },
+    {
+        "id": 103992155,
+        "name": "Junior Python Разработчик",
+        "city": "Москва",
+        "salary_from": 50000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103992155?host=hh.ru",
+        "requirement": "Решать задачи на <highlighttext>Python</highlighttext> и разрабатывать сайты при помощи фреймворка Django. Работа с базами данных с ипользованием PostgreSQL (+архитектура). ",
+        "responsibility": "Писать стабильный, поддерживаемый код, в соответствии с ТЗ. Вместе с командой проектировать архитектуру приложений и выбирать технологии. Разработка функционала для..."
+    },
+    {
+        "id": 102612686,
+        "name": "Junoir Python developer",
+        "city": "Санкт-Петербург",
+        "salary_from": null,
+        "salary_to": 60000,
+        "url": "https://api.hh.ru/vacancies/102612686?host=hh.ru",
+        "requirement": "Знаешь <highlighttext>Python</highlighttext> и имеешь опыт написания pet-проектов. Знаком(а) с Django и Flask/Fast API. Понимаешь СУБД и можешь...",
+        "responsibility": "Можешь принимать и вовремя давать обратную связь по поводу того, что происходит в проекте. Дорабатывать и сопровождать проекты."
+    },
+    {
+        "id": 103677273,
+        "name": "Junior Frontend разработчик",
+        "city": "Москва",
+        "salary_from": 40000,
+        "salary_to": 60000,
+        "url": "https://api.hh.ru/vacancies/103677273?host=hh.ru",
+        "requirement": "Умение верстать по Figma и по заданному примеру сайта. Опыт работы с адаптивной вёрсткой и простыми анимациями. Знание React и...",
+        "responsibility": "Верстка сайтов, написание frontend логики, работа с Telegram WebApp. Активное взаимодействие с членами команды разработки и смежными отделами. "
+    },
+    {
+        "id": 103968665,
+        "name": "Python developer jun+",
+        "city": "Москва",
+        "salary_from": 40000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103968665?host=hh.ru",
+        "requirement": "Опыт работы с FastAPI. Опыт работы с SQLAlchemy. Уверенные знания <highlighttext>Python</highlighttext>. Уверенное владение SQL. Опыт написания \"сырых\" запросов и оптимизация. ",
+        "responsibility": null
+    },
+    {
+        "id": 103891940,
+        "name": "Специалист технической поддержки SQL, Python",
+        "city": "Москва",
+        "salary_from": null,
+        "salary_to": 100000,
+        "url": "https://api.hh.ru/vacancies/103891940?host=hh.ru",
+        "requirement": "Умение изучить и докопаться до сути клиентского запроса. Владение SQL и <highlighttext>Python</highlighttext> на базовом уровне: понимание вложенных запросов, соединений, работы...",
+        "responsibility": "Настройка клиентского функционала по ТЗ (работа с базой данных SQL, <highlighttext>python</highlighttext>-скриптами, файлами json, шаблонизатором jinja). Локализация и решение проблем..."
+    },
+    {
+        "id": 103908864,
+        "name": "Frontend-разработчик",
+        "city": "Санкт-Петербург",
+        "salary_from": 80000,
+        "salary_to": 200000,
+        "url": "https://api.hh.ru/vacancies/103908864?host=hh.ru",
+        "requirement": "Знание Javascript и особенно React. Понимание REST-запросов. HTML/CSS. Знание <highlighttext>Python</highlighttext> (хоть какое-то). Опыт взаимодействия с MUI-фреймворком. ",
+        "responsibility": "Разработка Single Page Application. Взаимодействие с REST API. Написание внутренних библиотек."
+    },
+    {
+        "id": 103527425,
+        "name": "CTO (релокация в наукоград Дубна, МО)",
+        "city": "Москва",
+        "salary_from": 500000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103527425?host=hh.ru",
+        "requirement": "Обширные знания в области разработки ПО: опыт работы с различными технологиями и языками программирования (желательно С++, Rust, C#, java, <highlighttext>Python</highlighttext>...",
+        "responsibility": "Ответственность за производство продуктов Компани (инженерные системы). Выстраивание системы и организация процессов производства продуктов Компании (разработка, аналитика, тестирование – совокупно порядка..."
+    },
+    {
+        "id": 103920430,
+        "name": "Бэкэнд разработчик (Python/Django)",
+        "city": "Москва",
+        "salary_from": 80000,
+        "salary_to": 110000,
+        "url": "https://api.hh.ru/vacancies/103920430?host=hh.ru",
+        "requirement": "Опыт работы в качестве Бэкенд <highlighttext>Разработчика</highlighttext> с уклоном на <highlighttext>Python</highlighttext> и Django. Опыт работы с Docker (+Docker Compose). ",
+        "responsibility": "Участие в разработке проектов. Разработка backend для сервисов, как в рамках новых проектов, так и для уже существующих. "
+    },
+    {
+        "id": 102978103,
+        "name": "Программист-стажер в инвестиционный фонд",
+        "city": "Санкт-Петербург",
+        "salary_from": 50000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/102978103?host=hh.ru",
+        "requirement": "Знание языка программирования <highlighttext>Python</highlighttext>. Опыт работы с API. Понимание принципов алгоритмической торговли. Базовые знания в области блокчейн-технологий. ",
+        "responsibility": "Написание кода по техническому заданию. Работа с API различных платформ для выполнения задач. Разработка алгоритмов для торговых стратегий фонда. "
+    },
+    {
+        "id": 103764869,
+        "name": "Программист-разработчик",
+        "city": "Москва",
+        "salary_from": 100000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103764869?host=hh.ru",
+        "requirement": "Знания одного или нескольких языков программирования, таких как: <highlighttext>Python</highlighttext>, Java, JavaScript (Node.js), C#, Ruby, Go и др. В нашем случае...",
+        "responsibility": "Разработка/доработка программного обеспечения для управления контентом на рекламных поверхностях. Разработка front и back части проекта. Поддержка, устранение ошибок. "
+    },
+    {
+        "id": 103602017,
+        "name": "Python Developer (Backend & Qt)",
+        "city": "Москва",
+        "salary_from": 90000,
+        "salary_to": 130000,
+        "url": "https://api.hh.ru/vacancies/103602017?host=hh.ru",
+        "requirement": "Опыт коммерческой разработки на <highlighttext>Python</highlighttext> от 2 лет. - Глубокое понимание принципов ООП и паттернов проектирования. - Опыт разработки высоконагруженных backend-систем. - ",
+        "responsibility": "1. Разработка и поддержка высоконагруженных backend-систем на <highlighttext>Python</highlighttext>. 2. Проектирование и реализация настольных приложений с использованием Qt. 3. "
+    },
+    {
+        "id": 103058314,
+        "name": "Стажер-разработчик",
+        "city": "Санкт-Петербург",
+        "salary_from": 46000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103058314?host=hh.ru",
+        "requirement": "Знание SQL. Владение языками программирования. Знание Java, C#, <highlighttext>Python</highlighttext>, C++. Опыт работы с PostgreSQL / Postgres Pro, Oracle, My SQL, MS...",
+        "responsibility": "Разработка настольных и веб-приложений. Разработка баз данных. Настройка системы. Тестирование результатов и устранение замечаний. Введение в проектную деятельность: Современные..."
+    },
+    {
+        "id": 103317574,
+        "name": "Intern Python Developer / Стажер Python-разработчик",
+        "city": "Москва",
+        "salary_from": 150000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103317574?host=hh.ru",
+        "requirement": "Опыт работы с <highlighttext>Python</highlighttext> (pandas, numpy). Знание Multiprocessing и Async. Знакомы с web scraping и parsing (Selenium / Beautiful Soup or...",
+        "responsibility": "Присоединяйтесь к нашей подкоманде аналитики, которая занимается сбором и обработкой данных для наших бизнес-направлений. Ваши задачи будут включать создание..."
+    },
+    {
+        "id": 103794585,
+        "name": "Тестировщик (ручное тестирование)",
+        "city": "Москва",
+        "salary_from": 150000,
+        "salary_to": 200000,
+        "url": "https://api.hh.ru/vacancies/103794585?host=hh.ru",
+        "requirement": "Опыт работы в должности тестировщика или <highlighttext>разработчика</highlighttext> от 1 года. Опыт ручного тестирования UI. Знания по: видам тестирования, тест-кейсам...",
+        "responsibility": "Проводить ручное тестирование системы (СМОУК, регресс, контроль качества нового функционала). Расследовать возникающие баг-репорты на предмет воспроизводимости, корректировать описания дефектов. "
+    },
+    {
+        "id": 103921523,
+        "name": "Backend разработчик Golang",
+        "city": "Пенза",
+        "salary_from": 50000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103921523?host=hh.ru",
+        "requirement": "Писать код на golang. Основы REST API. Базовые знания <highlighttext>Python</highlighttext>. Опыт работы с базами данных (PostgreSQL, MySQL). Умение пользоваться GPT. ",
+        "responsibility": "Быть на созвонах."
+    },
+    {
+        "id": 103930739,
+        "name": "Junior Python Developer",
+        "city": "Москва",
+        "salary_from": 100000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103930739?host=hh.ru",
+        "requirement": "Умение работать с Sqlalchemy или аналогом для взаимодействия с БД. Владение pandas в части работы с таблицами. Наличие опыта работы...",
+        "responsibility": "Писать скрипты на <highlighttext>python</highlighttext> для автоматизированного сбора и подготовки данных для различных систем(BI, CRM). Автоматизировать расчет инвестиционных продуктов на..."
+    },
+    {
+        "id": 102578393,
+        "name": "Разработчик Telagram-ботов",
+        "city": "Москва",
+        "salary_from": 500,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/102578393?host=hh.ru",
+        "requirement": "Опыт работы с Telegram Bot API. - Знание языков программирования, таких как <highlighttext>Python</highlighttext>, JavaScript или других подходящих языков. - Понимание принципов работы...",
+        "responsibility": "Функционал бота: - Разработка и поддержка Телеграм-бота, который может автоматически принимать заявки в группу. - Обеспечение возможности бота отправлять сообщения (текста..."
+    },
+    {
+        "id": 103936271,
+        "name": "Backend-разработчик (Python)",
+        "city": "Оренбург",
+        "salary_from": 40000,
+        "salary_to": 70000,
+        "url": "https://api.hh.ru/vacancies/103936271?host=hh.ru",
+        "requirement": null,
+        "responsibility": "Разработка и введение крупного проекта на <highlighttext>Python</highlighttext> Django PostgresSQL. Участие в еженедельных созвонах. Celery, Redis, PostgreSQL, alembic, requests, SQLAlchemy."
+    },
+    {
+        "id": 101871676,
+        "name": "Junior Python Django developer",
+        "city": "Москва",
+        "salary_from": null,
+        "salary_to": 120000,
+        "url": "https://api.hh.ru/vacancies/101871676?host=hh.ru",
+        "requirement": "Уверенное владение <highlighttext>Python</highlighttext>3.9+. Django Rest Framework на хорошем уровне. Понимание принципа работы моделей, сериалайзеров, вью. ",
+        "responsibility": "В первую очередь работа с печатными материалами (выгрузки счетов, КП и пр. в xslx, pdf). Помощь в разработке API в..."
+    },
+    {
+        "id": 103797621,
+        "name": "Программист (Junior - младший разработчик)",
+        "city": "Санкт-Петербург",
+        "salary_from": 30000,
+        "salary_to": 60000,
+        "url": "https://api.hh.ru/vacancies/103797621?host=hh.ru",
+        "requirement": "Знание одного из объектно-ориентированного языка программирования, к примеру: C++\\C#, Delphi, <highlighttext>Python</highlighttext>, Pascal, 1С. Знание работы с СУБД...",
+        "responsibility": "Участие в интересных проектах. Доработка и разработка программного комплекса. Дополнительно: Тестирование информационных систем. Настройка информационной системы (ИС) автоматизации бизнес-процессов. "
+    },
+    {
+        "id": 103555569,
+        "name": "Программист Python",
+        "city": "Санкт-Петербург",
+        "salary_from": null,
+        "salary_to": 550000,
+        "url": "https://api.hh.ru/vacancies/103555569?host=hh.ru",
+        "requirement": "Опыт работы с <highlighttext>Python</highlighttext> от 5 лет. Понимание принципов ООП и структур данных. Опыт прохождения алгоритмов. Умение работать с базами...",
+        "responsibility": "Разработка и поддержка программного обеспечения на <highlighttext>Python</highlighttext>. Написание чистого, эффективного и поддерживаемого кода. Работа с базами данных и библиотеками <highlighttext>Python</highlighttext>..."
+    },
+    {
+        "id": 103902880,
+        "name": "Python backend разработчик",
+        "city": "Москва",
+        "salary_from": 110000,
+        "salary_to": 150000,
+        "url": "https://api.hh.ru/vacancies/103902880?host=hh.ru",
+        "requirement": "Что вам нужно знать: – <highlighttext>Python</highlighttext>. – Обязательно - уверенное знание Django. – SQL и принципы проектирования баз данных. Лучше всего, если у вас...",
+        "responsibility": "Мы выполняем проекты по заказной разработке, поддержке, интернет-магазинов и т.д. – Разрабатывать сложные, информационные системы. – Исследовать новые технологии, быть..."
+    },
+    {
+        "id": 102778286,
+        "name": "Стажер-программист Python",
+        "city": "Бор",
+        "salary_from": 30000,
+        "salary_to": 50000,
+        "url": "https://api.hh.ru/vacancies/102778286?host=hh.ru",
+        "requirement": "Знание языка программирования <highlighttext>Python</highlighttext>. Опыт работы с библиотеками для анализа данных: Pandas, NumPy. Опыт работы с библиотеками для визуализации данных...",
+        "responsibility": "Разработка и поддержка внутренней учетно-аналитической системы на базе FastAPI. Работа с данными и выполнение анализа данных с использованием различных..."
+    },
+    {
+        "id": 103874722,
+        "name": "Программист Python",
+        "city": "Ярославль",
+        "salary_from": 115000,
+        "salary_to": 220000,
+        "url": "https://api.hh.ru/vacancies/103874722?host=hh.ru",
+        "requirement": "Знание <highlighttext>Python</highlighttext> или иных скриптовых языков с последующей миграцией на <highlighttext>Python</highlighttext>. Хорошее знание SQL. Умение и желание писать качественный, поддерживаемый...",
+        "responsibility": null
+    },
+    {
+        "id": 102306596,
+        "name": "Junior Python-разработчик",
+        "city": "Москва",
+        "salary_from": 40000,
+        "salary_to": 60000,
+        "url": "https://api.hh.ru/vacancies/102306596?host=hh.ru",
+        "requirement": "Уверенное владение языком программирования <highlighttext>Python</highlighttext>. Знание одного из следующих фреймворков: Django, DRF или FastAPI. Опыт работы с системой контроля версий...",
+        "responsibility": "Разработка и тестирование backend-части программного обеспечения в соответствии с техническим заданием. Поддержка и устранение недостатков в разработанном программном обеспечении. "
+    },
+    {
+        "id": 102862284,
+        "name": "Программист Python (Junior)",
+        "city": "Москва",
+        "salary_from": null,
+        "salary_to": 120000,
+        "url": "https://api.hh.ru/vacancies/102862284?host=hh.ru",
+        "requirement": "Уверенное владение <highlighttext>Python</highlighttext>. Умение писать SQL запросы. Аналитический склад ума. Навык работы с технической документацией и требованиями. Умение разбираться в...",
+        "responsibility": "Исправление существующих и возникающих багов. Взаимодействие с командой по проекту. Работа с системой контроля версий Git. Разработка и тестирование backend..."
+    },
+    {
+        "id": 103703806,
+        "name": "Программист-разработчик",
+        "city": "Ижевск",
+        "salary_from": 25000,
+        "salary_to": 50000,
+        "url": "https://api.hh.ru/vacancies/103703806?host=hh.ru",
+        "requirement": "Знали основы <highlighttext>Python</highlighttext>. Работали с MySQL. Были ответственным, самостоятельным, организованным. Быстро обучались, стремились учиться и развиваться. Знаете Django. ",
+        "responsibility": "Создание парсеров, кликеров и прочих скриптов для сбора и мониторинга. Составление схем взаимодействия между сервисами. Написание проектов по автоматизации работы. "
+    },
+    {
+        "id": 103641114,
+        "name": "Python-разработчик",
+        "city": "Екатеринбург",
+        "salary_from": 50000,
+        "salary_to": 150000,
+        "url": "https://api.hh.ru/vacancies/103641114?host=hh.ru",
+        "requirement": "Владение <highlighttext>Python</highlighttext> 3.12. Знание библиотек pandas, requests, BeautifulSoup, Selenium. Знание основ Git. Знание основ ETL. Будут плюсом: навыки разработки...",
+        "responsibility": "Автоматизация бизнес-процессов через API различных маркетплейсов (OZON, WB, Яндекс Маркет). Заниматься построением связей с данными парсинга поставщиков и маркетплейсами. "
+    },
+    {
+        "id": 103140775,
+        "name": "Junior Product Analyst",
+        "city": "Москва",
+        "salary_from": 120000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103140775?host=hh.ru",
+        "requirement": "Опыт анализа реальных данных на <highlighttext>Python</highlighttext>. Опыт практического проведение и запуска A/B тестов. Опыт работы с одной с BI...",
+        "responsibility": "Разрабатывать иерархию метрик и определять ключевые драйверы роста продукта. Рассчитывать и мониторить ключевые метрики продукта. Заниматься построением продуктовых воронок. "
+    },
+    {
+        "id": 102855039,
+        "name": "Программист Python (Junior)",
+        "city": "Волгоград",
+        "salary_from": 30000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/102855039?host=hh.ru",
+        "requirement": "Знание <highlighttext>Python</highlighttext> (начальный уровень, готовность развиваться в рамках данного языка). Знание Django ORM. Отличное владение ООП. Аккуратность в работе, стремление...",
+        "responsibility": "Работа с базами данных (SQL)."
+    },
+    {
+        "id": 103887746,
+        "name": "Middle Python Developer",
+        "city": "Москва",
+        "salary_from": 120000,
+        "salary_to": 150000,
+        "url": "https://api.hh.ru/vacancies/103887746?host=hh.ru",
+        "requirement": "1-3 года коммерческого опыта программирования на <highlighttext>Python</highlighttext>. Уверенное знание принципов ООП. Опыт работы с AioGram, Telebot будет преимуществом. ",
+        "responsibility": "Поддержка имеющихся продуктов и сервисов. Создание новых продуктов и сервисов. Доработка функционала и рефакторинг."
+    },
+    {
+        "id": 103726595,
+        "name": "Middle Python Developer",
+        "city": "Санкт-Петербург",
+        "salary_from": 80000,
+        "salary_to": 120000,
+        "url": "https://api.hh.ru/vacancies/103726595?host=hh.ru",
+        "requirement": "Опыт коммерческой разработки от 2 лет. Уверенное знание и опыт работы с <highlighttext>Python</highlighttext>/Flask. No-SQL (MongoDB/Redis). ",
+        "responsibility": "Разработка и поддержка основного функционала платформа системы. Разработка и обслуживание интеграций с внешними бизнес партнерами, приложениями и сервисами. "
+    },
+    {
+        "id": 102942268,
+        "name": "Программист Python (веб и мобильные проекты)",
+        "city": "Волгоград",
+        "salary_from": 50000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/102942268?host=hh.ru",
+        "requirement": "Знания языка <highlighttext>Python</highlighttext> 3, умение писать читабельный код. Понимание ООП, MVC, процедурных и функциональных подходов. Опыт работы с <highlighttext>Python</highlighttext> фреймворками...",
+        "responsibility": "Разработка и поддержка бекенд логики веб и мобильных приложений. Проектирование архитектуры приложений совместно с командой. Проведение код-ревью и помощь..."
+    },
+    {
+        "id": 103215751,
+        "name": "Младший backend-разработчик",
+        "city": "Москва",
+        "salary_from": 45000,
+        "salary_to": 120000,
+        "url": "https://api.hh.ru/vacancies/103215751?host=hh.ru",
+        "requirement": "Базовые знания одного из языков программирования — <highlighttext>Python</highlighttext>, Java, C#, PHP, Ruby, Go или JavaScript. У нас есть микросервисы почти на...",
+        "responsibility": "Развитие backend-составляющей существующих проектов. Разработки новых модулей и микросервисов системы по заданным спецификациям — описаниям API в Postman и описаниям..."
+    },
+    {
+        "id": 103963427,
+        "name": "Web разработчик",
+        "city": "Москва",
+        "salary_from": 300000,
+        "salary_to": 400000,
+        "url": "https://api.hh.ru/vacancies/103963427?host=hh.ru",
+        "requirement": "Базовые умения работы с командной строкой linux. Знание NoSQL (Redis, Elasticsearch, Mongo). Знание <highlighttext>Python</highlighttext> (Django, Flask). Умение работать с Docker​​​​​​​​​​​​​​​​​​​​​​​​​​​​.",
+        "responsibility": "Развивать и оптимизировать существующие решения. Участвовать в разработке новых микросервисов. Интегрироваться со внешними сервисами. Изучать и применять на практике новые..."
+    },
+    {
+        "id": 99086642,
+        "name": "Junior Game Designer (Balance)",
+        "city": "Новосибирск",
+        "salary_from": 60000,
+        "salary_to": 80000,
+        "url": "https://api.hh.ru/vacancies/99086642?host=hh.ru",
+        "requirement": "Интерес к развитию в геймдеве. Большой игровой опыт в казуальных мобильных играх. Знание основных метрик игр (ARPU, DAU и тд). ",
+        "responsibility": "Расчет и корректировка баланса игры."
+    },
+    {
+        "id": 102939106,
+        "name": "Тестировщик ПО",
+        "city": "Москва",
+        "salary_from": 40000,
+        "salary_to": 100000,
+        "url": "https://api.hh.ru/vacancies/102939106?host=hh.ru",
+        "requirement": "Анализ логов для понимания, в какой отдел ставить задачу на исправление конкретного дефекта. Наши ожидания от соискателя: Опыт работы необязателен...",
+        "responsibility": "Регулярное тестирование веб-проектов (ручное). Проверка выполнения задач <highlighttext>программистами</highlighttext>, описание проблем, багов, недочетов. Внесение предложений по улучшениям ПО. "
+    },
+    {
+        "id": 101756580,
+        "name": "Младший веб-аналитик (обучение с нуля)",
+        "city": "Москва",
+        "salary_from": 40000,
+        "salary_to": 60000,
+        "url": "https://api.hh.ru/vacancies/101756580?host=hh.ru",
+        "requirement": "Рассматриваем специалистов без опыта. Хорошие аналитические способности, системное мышление. Умение работать с большим объемом данных. Желание расти и обучаться. ",
+        "responsibility": "Настраивать целевые действия на сайте. Составлять ТЗ <highlighttext>разработчикам</highlighttext>, проверять корректность реализации. Анализировать эффективность источников трафика. Анализировать поведение пользователей на сайте."
+    },
+    {
+        "id": 102306085,
+        "name": "Программист Python",
+        "city": "Краснодар",
+        "salary_from": 30000,
+        "salary_to": 40000,
+        "url": "https://api.hh.ru/vacancies/102306085?host=hh.ru",
+        "requirement": "Цену проставил условную. Прошу в ответе написать стоимость Вашего часа, область, в которой имели опыт, ключевые навыки.",
+        "responsibility": "Необходимо написать микросервисное приложение обслуживающее кафку, получающий из нее сообщения о файлах, отправки в обработку этих файлов, и получение ответа. "
+    },
+    {
+        "id": 103120243,
+        "name": "Junior+ Backend Разработчик (Python)",
+        "city": "Москва",
+        "salary_from": 80000,
+        "salary_to": 120000,
+        "url": "https://api.hh.ru/vacancies/103120243?host=hh.ru",
+        "requirement": "Опыт разработки на <highlighttext>Python</highlighttext> от 1 года. Знание и опыт работы с фреймворками Flask и/или Django. Опыт работы с...",
+        "responsibility": "Разработка и поддержка веб-приложений на <highlighttext>Python</highlighttext> с использованием Flask. Верстка web страниц по макетам, которые разрабатывают дизайнеры. "
+    },
+    {
+        "id": 103313710,
+        "name": "Младший системный аналитик",
+        "city": "Москва",
+        "salary_from": 60000,
+        "salary_to": 140000,
+        "url": "https://api.hh.ru/vacancies/103313710?host=hh.ru",
+        "requirement": "Высшее образование (желательно техническое или математическое). Плюсом будет знание языков программирования (например, SQL, <highlighttext>Python</highlighttext>). Понимание принципов работы реляционных баз данных. ",
+        "responsibility": "Сбор и анализ требований к системам. Разработка технических заданий. Участие в проектировании систем. Тестирование программного обеспечения."
+    },
+    {
+        "id": 103415524,
+        "name": "Python разработчик",
+        "city": "Москва",
+        "salary_from": 150000,
+        "salary_to": 250000,
+        "url": "https://api.hh.ru/vacancies/103415524?host=hh.ru",
+        "requirement": "Уверенные знания и опыт работы с <highlighttext>Python</highlighttext>. Опыт работы с Celery, RabbitMQ, PostgreSQL, nginx и Docker. Знание фреймворков Django, DRF...",
+        "responsibility": "Разработка и поддержка бекенд-части приложения на языке <highlighttext>Python</highlighttext>. Создание и управление очередями задач с использованием Celery и RabbitMQ. "
+    },
+    {
+        "id": 102758854,
+        "name": "Python разработчик",
+        "city": "Москва",
+        "salary_from": 100000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/102758854?host=hh.ru",
+        "requirement": "Опыт коммерческой разработки на <highlighttext>Python</highlighttext> от 1 года. Понимание принципов ООП и паттернов проектирования. Опыт работы с одним из современных...",
+        "responsibility": "Разработка и поддержка многопоточных приложений. Участие в разработке архитектуры системы. Декомпозиция и оценка задач, разработка новых фич и фикс багов. "
+    },
+    {
+        "id": 103297432,
+        "name": "Python developer (в отдел системной разработки)",
+        "city": "Москва",
+        "salary_from": 100000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103297432?host=hh.ru",
+        "requirement": "Навыки работы в GNU/Linux. Знание отличий версий <highlighttext>Python</highlighttext> 3.7 и 3.11. Опыт работы с RabbitMQ. ",
+        "responsibility": "Участие в развитии и поддержке системы класса \"песочница\" (sandbox). Разработка и поддержка микросервисов. Совместная разработка с использованием средств GitLab. "
+    },
+    {
+        "id": 102136724,
+        "name": "Middle Python Developer",
+        "city": "Москва",
+        "salary_from": 200000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/102136724?host=hh.ru",
+        "requirement": "Опыт коммерческой разработки на <highlighttext>Python</highlighttext> от 3х лет. Знания принципов SOLID и DDD. Опыт работы с TDD: Опыт работы...",
+        "responsibility": "Разработка ERP системы группы компаний. Работа с брокерами сообщений (RabbitMQ). Написание TDD. Проектирование взаимодействия IT систем группы компаний с 1..."
+    },
+    {
+        "id": 102971023,
+        "name": "Frontend Developer",
+        "city": "Москва",
+        "salary_from": 3000,
+        "salary_to": 5000,
+        "url": "https://api.hh.ru/vacancies/102971023?host=hh.ru",
+        "requirement": "Skills: - 2+ years of React and Typescript experience. - experience with HTML5 and CSS3. - <highlighttext>Python</highlighttext>, Node, SQL (bonus). ",
+        "responsibility": "We're bootstrapped & profitable, and have grown 3x in the past year."
+    },
+    {
+        "id": 103712003,
+        "name": "Разработчик Python",
+        "city": "Москва",
+        "salary_from": 75000,
+        "salary_to": 100000,
+        "url": "https://api.hh.ru/vacancies/103712003?host=hh.ru",
+        "requirement": "<highlighttext>Python</highlighttext> 3+. Умение проверять свой код и отвечать за результат своей работы. Опыт работы с Flask или другими популярными...",
+        "responsibility": "Участие в проектировании и разработке веб-сервисов и API для мобильных приложений."
+    },
+    {
+        "id": 102778649,
+        "name": "QA Engineer (Python)",
+        "city": "Москва",
+        "salary_from": 2000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/102778649?host=hh.ru",
+        "requirement": "Proficient experience in <highlighttext>Python</highlighttext> + Playwright + Pytest. Experience with VCS, Docker. Knowledge of Linux. Understanding of CI/CD. ",
+        "responsibility": "<highlighttext>Develop</highlighttext> test cases and acceptance criteria based on business requirements in Allure TestOps. Maintain the test case library. "
+    },
+    {
+        "id": 103988379,
+        "name": "Системный администратор",
+        "city": "Москва",
+        "salary_from": 200000,
+        "salary_to": 280000,
+        "url": "https://api.hh.ru/vacancies/103988379?host=hh.ru",
+        "requirement": "Понимание принципов построения распределенных и отказоустойчивых систем. Опыт автоматизации задач по администрированию - bash/<highlighttext>python</highlighttext> scripting. Опыт использования docker. ",
+        "responsibility": "Управление конфигурациями сервисов, контроль внесения изменений в среды. Работа в команде с <highlighttext>разработчиками</highlighttext> системными администраторами смежных направлений. Взаимодействие с облачными..."
+    },
+    {
+        "id": 102587771,
+        "name": "Full-stack разработчик (Бэкенд-разработчик (backend developer))",
+        "city": "Москва",
+        "salary_from": 110000,
+        "salary_to": 140000,
+        "url": "https://api.hh.ru/vacancies/102587771?host=hh.ru",
+        "requirement": "Знания JavaScript (используется React, TypeScript). Знакомство с платформой Microsoft .Net, языком C#, средой VisualStudio. Знание и понимание ООП. ",
+        "responsibility": "Разработка программных продуктов для систем электронного документооборота. Разворачивать, обновлять и мигрировать компоненты системы электронного документооборота."
+    },
+    {
+        "id": 103064392,
+        "name": "Разработчик в отдел нейросетей (ML-engineer)",
+        "city": "Москва",
+        "salary_from": 70000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103064392?host=hh.ru",
+        "requirement": "Знание <highlighttext>Python</highlighttext>. Знакомство с Tensorflow и Pytorch. Хорошее знание математики. Знакомство с С++. Знакомство с инструментами коллективной разработки. ",
+        "responsibility": "Основной функционал: Тестирование различных вариантов сетей. Оптимизация работы нейросетей. Помощь <highlighttext>разработчикам</highlighttext> с интеграцией нейросетей в продукты. Разработка вспомогательных алгоритмов обработки..."
+    },
+    {
+        "id": 103791770,
+        "name": "Стажер-разработчик (в отдел разработки высоконагруженных потоковых сервисов)",
+        "city": "Москва",
+        "salary_from": 40000,
+        "salary_to": 40000,
+        "url": "https://api.hh.ru/vacancies/103791770?host=hh.ru",
+        "requirement": "Знание любого языка программирования на базовом уровне (Java, <highlighttext>Python</highlighttext>, Golang и пр.). Знание классических алгоритмов, структур данных, лучших практик работы...",
+        "responsibility": "Участие в разработке продуктов, сервисов, обеспечивающих непрерывную загрузку обработку данных от внешних источников. Совершенствование алгоритмов, архитектур систем для повышения эффективности..."
+    },
+    {
+        "id": 103608046,
+        "name": "Программист (разработка чат-ботов)",
+        "city": "Санкт-Петербург",
+        "salary_from": 183000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103608046?host=hh.ru",
+        "requirement": "Умение разбираться в коде. Уверенные знания <highlighttext>Python</highlighttext> и Aiogram. Навыки парсинга данных через <highlighttext>Python</highlighttext>. Практический опыт разработки на JavaScript. ",
+        "responsibility": "Проектирование, разработка чат-ботов. Исправление и тестирование чат-ботов. Настройка, документирование чат-ботов. Прочие задачи по направлению."
+    },
+    {
+        "id": 103730782,
+        "name": "Backend-разработчик Python",
+        "city": "Москва",
+        "salary_from": 170000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103730782?host=hh.ru",
+        "requirement": "Знание <highlighttext>Python</highlighttext>3.6+, Django2 + DRF, PostgreSQL, PaySpark. Ответственность за сроки, Вы сами оцениваете поставленную задачу и...",
+        "responsibility": "Проверка загружаемых данных на соответствие паспорту данных. Добавление идентификаторов для консолидации данных, проверка качества данных. Разделение ресурсов и данных. "
+    },
+    {
+        "id": 103919723,
+        "name": "Разработчик скриптов",
+        "city": "Тюмень",
+        "salary_from": 50000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103919723?host=hh.ru",
+        "requirement": "Знание <highlighttext>Python</highlighttext> либо Delphi, C++. - Понимание принципов объектно-ориентированного программирования. - Приветствуется опыт работы в ObjectARX. - Умение работать с базой данных...",
+        "responsibility": null
+    },
+    {
+        "id": 102478946,
+        "name": "Junior Backend Developer (Python и SQL)",
+        "city": "Москва",
+        "salary_from": 70000,
+        "salary_to": 90000,
+        "url": "https://api.hh.ru/vacancies/102478946?host=hh.ru",
+        "requirement": "Опыт коммерческой разработки от 1 года. Высшее образование (можно неоконченное/неполное) технического ВУЗа последнего или предпоследнего курса. Логичный и структурированный...",
+        "responsibility": "Желание расти с проектом и учиться новым технологиям, расширять компетенции. Написание качественного кода и тестов к нему."
+    },
+    {
+        "id": 103126422,
+        "name": "Программист-разработчик",
+        "city": "Ижевск",
+        "salary_from": 60000,
+        "salary_to": 120000,
+        "url": "https://api.hh.ru/vacancies/103126422?host=hh.ru",
+        "requirement": "Знание библиотек для создания ботов (telepot для <highlighttext>Python</highlighttext>, telegram-bot-sdk для JavaScript и т.д.). 5. DevOps навыки: - Опыт...",
+        "responsibility": "1. Языки программирования: - **Backend:**. - Интеграционные тесты и тестирование API."
+    },
+    {
+        "id": 103768970,
+        "name": "Стажер-программист Java",
+        "city": "Ростов-на-Дону",
+        "salary_from": 30000,
+        "salary_to": 30000,
+        "url": "https://api.hh.ru/vacancies/103768970?host=hh.ru",
+        "requirement": "Хорошее понимание объектно-ориентированного программирования. Знать типы данных, понимать как работает приведение типов и сравнение переменных. Знать, что такое управляющие...",
+        "responsibility": "Делимся своей экспертизой в корпоративных блогах, выступаем на отраслевых конференциях и митапах, активно участвуем в жизни ИТ-сообщества. "
+    },
+    {
+        "id": 103297882,
+        "name": "Middle Python backend разработчик",
+        "city": "Москва",
+        "salary_from": 130000,
+        "salary_to": 150000,
+        "url": "https://api.hh.ru/vacancies/103297882?host=hh.ru",
+        "requirement": "Опыт работы с REST API. - Знание языка программирования <highlighttext>Python</highlighttext> и фреймворка Django или FastAPI. - Умение самостоятельно находить проблемы и предлагать...",
+        "responsibility": "1. Создание и поддержка веб-приложений на основе фреймворка Django+DRF/FastAPI. 2. Разработка и оптимизация баз данных. 3. "
+    },
+    {
+        "id": 103007146,
+        "name": "Программист Python",
+        "city": "Москва",
+        "salary_from": null,
+        "salary_to": 342000,
+        "url": "https://api.hh.ru/vacancies/103007146?host=hh.ru",
+        "requirement": "Коммерческий опыт от 3ех лет. Знание SQL на достаточном уровне. Отличное знание FastApi. Опыт работы с Apache Airflow.",
+        "responsibility": "Разработка отказоустойчивого и масштабируемого программного обеспечения. Разработка, как нового функционала (сервисов), так и поддержка уже существующего. Участие в Code rewiew. "
+    },
+    {
+        "id": 103193990,
+        "name": "Разработчик Python / Django",
+        "city": "Москва",
+        "salary_from": 100000,
+        "salary_to": 250000,
+        "url": "https://api.hh.ru/vacancies/103193990?host=hh.ru",
+        "requirement": "Отличное знание <highlighttext>Python</highlighttext>, Django, Celery, PostgreSQL, Redis, ClickHouse (желателен опыт работы от 3-х лет). Опыт написания unit-тестов. ",
+        "responsibility": "Участие в разработке проектов. Разработка backend (REST API ) для сервисов, как в рамках новых проектов, так и для уже существующих. "
+    },
+    {
+        "id": 103293978,
+        "name": "Backend разработчик",
+        "city": "Москва",
+        "salary_from": 140000,
+        "salary_to": 180000,
+        "url": "https://api.hh.ru/vacancies/103293978?host=hh.ru",
+        "requirement": "Хотим видеть у тебя: Опыт продуктовой разработки от 2-5 лет. Хорошие знания Django, Django Rest Framework, Celery. ",
+        "responsibility": "Анализом функциональных требований. Разработкой новых и развитием существующих модулей в рамках платформы. Интеграцией с API внешних сервисов."
+    },
+    {
+        "id": 103886325,
+        "name": "Junior Fronted-разработчик",
+        "city": "Томск",
+        "salary_from": 5700,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103886325?host=hh.ru",
+        "requirement": "Знания HTML, CSS, Javascript. Опыт работы с <highlighttext>Python</highlighttext>. Опыт работы с React, Bootstrap. Подготовиться к занятию. Провести занятие по конспекту. ",
+        "responsibility": "Работа с продвинутыми детьми. Участие и проведение мероприятий. Зарядить детей на плодотворную работу. Обучающих материалов по наставничеству. Поддержки со стороны..."
+    },
+    {
+        "id": 101951553,
+        "name": "Trainee/Intern/Junior Python backend developer",
+        "city": "Санкт-Петербург",
+        "salary_from": 10000,
+        "salary_to": 30000,
+        "url": "https://api.hh.ru/vacancies/101951553?host=hh.ru",
+        "requirement": "Для этого мы ищем начинающего, сообразительного, шустрого, амбициозного интерна-джуна питониста. Опыт в коммерческой разработке не требуется – важнее навык быстро...",
+        "responsibility": "Писать тесты. Писать фичи. Писать фронт. Диплоить проекты. И всем даём ответ ;)."
+    },
+    {
+        "id": 103110598,
+        "name": "Junior программист Python",
+        "city": "Москва",
+        "salary_from": 60000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103110598?host=hh.ru",
+        "requirement": "Уверенное знание <highlighttext>Python</highlighttext>. Уверенное знание SQL(PSQL, MSSQL). Умение работать с FastAPI. Умение работать с Git. Знание SQLAlchemy. ",
+        "responsibility": "Поддержка микросервисов. Разработка интеграций с внешними и внутренними сервисами. Участие в разработке моделей по прогнозированию."
+    },
+    {
+        "id": 103700665,
+        "name": "Программист-разработчик по нейросетям, обработка данных, сбор датасета",
+        "city": "Уфа",
+        "salary_from": 45000,
+        "salary_to": 60000,
+        "url": "https://api.hh.ru/vacancies/103700665?host=hh.ru",
+        "requirement": "инструменты Keras, ONNX, TensorFlow и другие. - умение манипулировать слоями. - владение <highlighttext>python</highlighttext>, open cv. - ответственность, аналитический склад ума, огонь в глазах. ",
+        "responsibility": "Технологический стек: - собирать датасет. - обучать нейронные сети ResNet50+, Yolo5+."
+    },
+    {
+        "id": 103040866,
+        "name": "Python Backend Developer",
+        "city": "Красноярск",
+        "salary_from": 75000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103040866?host=hh.ru",
+        "requirement": "Владение <highlighttext>Python</highlighttext>. Опыт работы с Postgres/MySQL. Хороший технический бэкграунд и опыт работы <highlighttext>разработчиком</highlighttext>. Желателен опыт разработки бэкенда мобильного или...",
+        "responsibility": "Проектировать и разрабатывать ключевые backend сервисы. Проектировать архитектуру приложений, согласовывать решения. Принимать участие в совершенствовании процессов разработки."
+    },
+    {
+        "id": 103562393,
+        "name": "Python-разработчик",
+        "city": "Челябинск",
+        "salary_from": null,
+        "salary_to": 60000,
+        "url": "https://api.hh.ru/vacancies/103562393?host=hh.ru",
+        "requirement": "Пишете качественный и эффективный код на <highlighttext>Python</highlighttext> 3. Имеете опыт разработки на Django. Будет плюсом: Опыт разработки на JavaScript. ",
+        "responsibility": null
+    },
+    {
+        "id": 102483362,
+        "name": "Junior+ Python разработчик",
+        "city": "Москва",
+        "salary_from": 70000,
+        "salary_to": 100000,
+        "url": "https://api.hh.ru/vacancies/102483362?host=hh.ru",
+        "requirement": "Опыт работы backend/fullstack <highlighttext>Python</highlighttext> <highlighttext>разработчиком</highlighttext> от 1 года. Знание. - ООП. - <highlighttext>Python</highlighttext> 3.7+. - SQL (PostgreSQL). - Linux (на уровне...",
+        "responsibility": "Сопровождение существующего backend CRM. - Оптимизация производительности и безопасности. - Написание чистого, понятного и поддерживаемого кода. - Проектирование и разработка новых небольших модулей..."
+    },
+    {
+        "id": 103902004,
+        "name": "Backend python developer",
+        "city": "Москва",
+        "salary_from": 120000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103902004?host=hh.ru",
+        "requirement": "Требования: Сильные аналитические навыки. Владение стеком <highlighttext>Python</highlighttext> (от 3х лет коммерческой разработки). Умение хорошо работать с данными и с...",
+        "responsibility": "Документирование кода (inline, readme.md, changelog.md). Создание / улучшение интеграций между системами. Оценка решений <highlighttext>разработчиков</highlighttext> (code review). Разработка общих модулей."
+    },
+    {
+        "id": 103773041,
+        "name": "Solidity/Rust Developer (DeFi)",
+        "city": "Москва",
+        "salary_from": 350000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103773041?host=hh.ru",
+        "requirement": "Опыт работы с Typescript. Плюсом будет опыт работы с <highlighttext>Python</highlighttext>. Способность продуктивно работать на удаленке и в динамичной обстановке. ",
+        "responsibility": "Работаем на результат, не нагружаем <highlighttext>разработчиков</highlighttext> избыточной отчетностью, трекерами и прочей бюрократией. Мнение каждого участника важно и влияет на продукт."
+    },
+    {
+        "id": 103696322,
+        "name": "Python developer",
+        "city": "Краснодар",
+        "salary_from": null,
+        "salary_to": 170000,
+        "url": "https://api.hh.ru/vacancies/103696322?host=hh.ru",
+        "requirement": "Опыт работы с языком программирования <highlighttext>Python</highlighttext> от 2-х лет. Хорошее знание базовых библиотек <highlighttext>Python</highlighttext>. Опыт работы с FastAPI для...",
+        "responsibility": "...на свой опыт. Проводить код-ревью. Помогать формулировать постановку задач менеджеру в виде, понятном для <highlighttext>разработчиков</highlighttext>. Валидировать оценку задач <highlighttext>разработчиками</highlighttext>."
+    },
+    {
+        "id": 102605379,
+        "name": "Тестировщик",
+        "city": "Красноярск",
+        "salary_from": 50000,
+        "salary_to": 80000,
+        "url": "https://api.hh.ru/vacancies/102605379?host=hh.ru",
+        "requirement": "Опыт работы с docker-контейнерами. Знание основ программирования <highlighttext>Python</highlighttext> или JS. Знание основ SQL. Опыт работы с Git. ",
+        "responsibility": "Взаимодействие с <highlighttext>разработчиками</highlighttext>, контроль устранения дефектов. Участие в написании методик тестирования для приёмо-сдаточных испытаний. Участие в проведении приёмо-сдаточных..."
+    },
+    {
+        "id": 102445607,
+        "name": "Junior Python разработчик",
+        "city": "Москва",
+        "salary_from": null,
+        "salary_to": 80000,
+        "url": "https://api.hh.ru/vacancies/102445607?host=hh.ru",
+        "requirement": "Язык программирования: <highlighttext>Python</highlighttext> 3.9+. Знание RestApi. Опыт написание API. Опыт работы над коммерческим или опен-сорс проектом. ",
+        "responsibility": "Поддерживать существующий код. Разрабатывать новый функционал. Поиск ошибок, разюор проблемных кейсов. Стек: <highlighttext>python</highlighttext>, FastApi, asyncio, mongo, RabbitMQ, Gitlab."
+    },
+    {
+        "id": 103108655,
+        "name": "Бэкэнд разработчик (Python/Django)",
+        "city": "Москва",
+        "salary_from": 130000,
+        "salary_to": 180000,
+        "url": "https://api.hh.ru/vacancies/103108655?host=hh.ru",
+        "requirement": "Требования: Опыт работы в качестве Бэкенд <highlighttext>Разработчика</highlighttext> с уклоном на <highlighttext>Python</highlighttext> и Django. Дополнительная информация: Огромный плюс если кандидат умеет...",
+        "responsibility": "Использование <highlighttext>Python</highlighttext> и Django для разработки эффективных и масштабируемых бэкенд решений. Реализация RESTful API с использованием Django Rest Framework (DRF..."
+    },
+    {
+        "id": 103765013,
+        "name": "Разработчик Python",
+        "city": "Щелково (Московская область)",
+        "salary_from": 150000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103765013?host=hh.ru",
+        "requirement": "Celery. Redis. Docker, docker-compose. GitLab. HTML, CSS, JavaScript. <highlighttext>Python</highlighttext>. ООП, уверенное применение на практике. Основные паттерны проектирования и применение...",
+        "responsibility": "Разработка приложений, сайтов и сервисов и микросервисов. Автоматизация бизнес процессов. Создание документации и схем. Проектирование и создание БД."
+    },
+    {
+        "id": 103622167,
+        "name": "ИТ-директор",
+        "city": "Краснодар",
+        "salary_from": 300000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103622167?host=hh.ru",
+        "requirement": "Глубокие знания и опыт работы с PHP. Знания и опыт Java, <highlighttext>Python</highlighttext>, 1C. Умение координировать проектные команды и руководить...",
+        "responsibility": "Планировать и координировать ИТ-проекты, обеспечивать своевременное выполнение проектов в рамках установленных сроков. Управлять проектными командами <highlighttext>разработчиков</highlighttext> и технической поддержки. "
+    },
+    {
+        "id": 103794687,
+        "name": "Разработчик Python (Middle)",
+        "city": "Санкт-Петербург",
+        "salary_from": 90000,
+        "salary_to": 150000,
+        "url": "https://api.hh.ru/vacancies/103794687?host=hh.ru",
+        "requirement": "Хорошие знания <highlighttext>Python</highlighttext> 3.6+, Django, DRF. Навык работы с Git. Умение разбираться в чужом коде. Опыт разработки в...",
+        "responsibility": "Поддержкой, развитием и оптимизацией существующих проектов. Разработкой новой функциональности и улучшением имеющейся. Работать в тесной связке с frontend-<highlighttext>разработчиком</highlighttext> (фронт..."
+    },
+    {
+        "id": 103624404,
+        "name": "Программист",
+        "city": "Томск",
+        "salary_from": 80000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103624404?host=hh.ru",
+        "requirement": "Node.js. <highlighttext>Python</highlighttext>. Express.js. Mongoose. Опыт работы с любой реляционной БД (SQL), умение писать запросы средней сложности (join, group и так...",
+        "responsibility": "Разработка/доработка прикладного ПО (по потребностям это <highlighttext>Python</highlighttext> - серверная часть + БД, немного JS, т.к. есть взаимодействие с Google..."
+    },
+    {
+        "id": 103597119,
+        "name": "Python Backend разработчик",
+        "city": "Ростов-на-Дону",
+        "salary_from": 80000,
+        "salary_to": 130000,
+        "url": "https://api.hh.ru/vacancies/103597119?host=hh.ru",
+        "requirement": "Высшее техническое образование (незаконченное высшее). Знание <highlighttext>Python</highlighttext>, Django, DRF‚ PostgreSQL, redis, rabbitMQ, Docker. Уверенная работа с git. От 1 года...",
+        "responsibility": "Разработка, развитие продуктов компании, разработка документации."
+    },
+    {
+        "id": 103147079,
+        "name": "Программист на Python (инженер-программист)",
+        "city": "Санкт-Петербург",
+        "salary_from": 60000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103147079?host=hh.ru",
+        "requirement": "Высшее или неполное высшее образование. Опыт программирования на <highlighttext>Python</highlighttext> ( 3.5 и выше) с использованием распространенных библиотек . Знание и опыт...",
+        "responsibility": "Разработка приложений на <highlighttext>Python</highlighttext>. Интеграция приложений и автоматизация тестирования программно-аппаратных комплексов. Разработка технической документации и подготовка отчетных материалов."
+    },
+    {
+        "id": 103644174,
+        "name": "Python-разработчик",
+        "city": "Санкт-Петербург",
+        "salary_from": null,
+        "salary_to": 290000,
+        "url": "https://api.hh.ru/vacancies/103644174?host=hh.ru",
+        "requirement": "Понимание, как работает Kubernetes, опыт работы с ним на уровне <highlighttext>разработчика</highlighttext>. Уверенные знания и опыт использования алгоритмов и паттернов программирования. ",
+        "responsibility": null
+    },
+    {
+        "id": 103363066,
+        "name": "Backend Разработчик (Middle +) Python",
+        "city": "Москва",
+        "salary_from": 150000,
+        "salary_to": 250000,
+        "url": "https://api.hh.ru/vacancies/103363066?host=hh.ru",
+        "requirement": "Понимание в асинхронном программировании и микросервисной архитектуре. Продвинутый опыт работы с <highlighttext>Python</highlighttext> и сопутствующих инструментов (pytest, flake8, black(ruff...",
+        "responsibility": "Создание механики баттл-пасса для мотивации пользователей. Создание бекенда для телеграмм-бота. Интеграция с сторонними сервисами (пуш-уведомления, почтовые клиенты..."
+    },
+    {
+        "id": 103156274,
+        "name": "Frontend Javascript разработчик",
+        "city": "Москва",
+        "salary_from": 120000,
+        "salary_to": 180000,
+        "url": "https://api.hh.ru/vacancies/103156274?host=hh.ru",
+        "requirement": "Вы не только умеете писать работающий код на JS, но и знаете как он работает (Vanilla.JS, ES5, ES6...",
+        "responsibility": "Разработка комплексных SPA-приложений, взаимодействие с различными API и внутренними сервисами. Написание производительного и отказоустойчивого кода на JavaScript используя современные..."
+    },
+    {
+        "id": 103575164,
+        "name": "Junior Web3-разработчик",
+        "city": "Казань",
+        "salary_from": null,
+        "salary_to": 100000,
+        "url": "https://api.hh.ru/vacancies/103575164?host=hh.ru",
+        "requirement": "Опыт программирования на Node js/TS, с готовностью рассмотреть кандидатов с опытом в <highlighttext>Python</highlighttext>/Go/Rust. 2. Понимание принципов работы...",
+        "responsibility": "1. Разработка и поддержка ботов для автоматизации процессов. 2. Разработка инструментов для других команд."
+    },
+    {
+        "id": 103251394,
+        "name": "Middle frontend разработчик (Vue.js)",
+        "city": "Казань",
+        "salary_from": null,
+        "salary_to": 200000,
+        "url": "https://api.hh.ru/vacancies/103251394?host=hh.ru",
+        "requirement": "Frontend: Опыт работы с Vue.js, знание Vuex. Контейнеризация: Опыт работы с Docker и Docker Compose. Кэширование: Опыт работы с Redis. ",
+        "responsibility": "Разработка и поддержка веб-приложений. Интеграция с Telegram mini app. Работа с Frontend частями проекта. Управление контейнерами и серверной инфраструктурой."
+    },
+    {
+        "id": 101856729,
+        "name": "Тестировщик (Казань)",
+        "city": "Казань",
+        "salary_from": 60000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/101856729?host=hh.ru",
+        "requirement": "Знание SQL (на уровне join-запросов). Навыки работы с БД. Опыт работы с <highlighttext>Python</highlighttext>, Selenium, Appium. Опыт работы перехвата трафика...",
+        "responsibility": "Ручное тестирование мобильных и веб-приложений. Регрессионное тестирование существующих продуктов. Сопровождение релизов. Взаимодействие с <highlighttext>разработчиками</highlighttext>, аналитиками. Участие в проработке задач. "
+    },
+    {
+        "id": 102786034,
+        "name": "Разработчик С++",
+        "city": "Москва",
+        "salary_from": 90000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/102786034?host=hh.ru",
+        "requirement": "Хорошее знание принципов работы ОС Linux, навык работы с командной строкой (bash/<highlighttext>python</highlighttext>/perl scripting). Владение языками C (C99...",
+        "responsibility": "Работа над интересными задачами по созданию системного ПО вычислительных систем. Использование новейших аппаратных и программных средств индустрии высокопроизводительных систем. "
+    },
+    {
+        "id": 103135257,
+        "name": "Middle Python-разработчик (TELETHON)",
+        "city": "Москва",
+        "salary_from": 100000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103135257?host=hh.ru",
+        "requirement": "Коммерческий опыт с <highlighttext>Python</highlighttext> (3+). Уверенный опыт работы с библиотеками: обязательно - telethon; желательно - pyrogram, tweepy, twython. Понимание контейнеризации и...",
+        "responsibility": "Разработка и поддержка модулей для автоматизации лидогенерации в социальных сетях. Рисерч новых технических подходов к добыче и анализу информации. "
+    },
+    {
+        "id": 80736556,
+        "name": "Разработчик Python",
+        "city": "Ростов-на-Дону",
+        "salary_from": 30000,
+        "salary_to": 80000,
+        "url": "https://api.hh.ru/vacancies/80736556?host=hh.ru",
+        "requirement": "Опыт проектирования, поддержки и разработки серверных компонентов на <highlighttext>Python</highlighttext>. Знание Microsoft SQL server и PostgreSql. Опыт работы с Git. ",
+        "responsibility": "Разработка бэкенд новых SaaS проектов на <highlighttext>Python</highlighttext>. Поддержка, устранение проблем в ранее разработанном ПО совместно с командой. Рефакторинг и оптимизация..."
+    },
+    {
+        "id": 103599134,
+        "name": "Бизнес-аналитик",
+        "city": "Санкт-Петербург",
+        "salary_from": 75000,
+        "salary_to": 125000,
+        "url": "https://api.hh.ru/vacancies/103599134?host=hh.ru",
+        "requirement": "Высшее образование (желательно техническое или математическое). Плюсом будет знание языков программирования (например, SQL, <highlighttext>Python</highlighttext>). Понимание принципов работы реляционных баз данных. ",
+        "responsibility": "Сбор и анализ требований к системам совместно с бизнес-заказчиками. Разработка технических заданий и передача их <highlighttext>разработчикам</highlighttext>. Участие в проектировании..."
+    },
+    {
+        "id": 103835961,
+        "name": "Программист-разработчик",
+        "city": "Москва",
+        "salary_from": 200000,
+        "salary_to": 300000,
+        "url": "https://api.hh.ru/vacancies/103835961?host=hh.ru",
+        "requirement": "PostgresSQL.",
+        "responsibility": "Дружелюбная и поддерживающая рабочая среда. Разработка веб кода. Коммуникация в команде."
+    },
+    {
+        "id": 103971529,
+        "name": "Аналитик данных, Китай, г. Ханчжоу",
+        "city": "Санкт-Петербург",
+        "salary_from": 120000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103971529?host=hh.ru",
+        "requirement": "Владение языками программирования <highlighttext>Python</highlighttext> (pandas, numpy, scikit-learn, TensorFlow, PyTorch). Знание алгоритмов анализа данных и методов статистической обработки. ",
+        "responsibility": "Взаимодействие с командами <highlighttext>разработчиков</highlighttext> электроники и инженеров для оптимизации алгоритмов управления протезом. Анализ больших объемов данных, собранных с протезов, и..."
+    },
+    {
+        "id": 103850443,
+        "name": "Python Backend Developer",
+        "city": "Казань",
+        "salary_from": 120000,
+        "salary_to": 160000,
+        "url": "https://api.hh.ru/vacancies/103850443?host=hh.ru",
+        "requirement": "Опыт разработки на <highlighttext>Python</highlighttext> от 3 лет, Middle, Senior уровень. Опыт разработки коммерческих клиент-серверных приложений на языке <highlighttext>Python</highlighttext>. ",
+        "responsibility": "Разработка новых и поддержка существующих микросервисов. Участие в проектировании архитектуры приложений и сервисов. Создание собственных API. Сопровождение существующих решений."
+    },
+    {
+        "id": 103552319,
+        "name": "Веб-разработчик",
+        "city": "Челябинск",
+        "salary_from": 60000,
+        "salary_to": null,
+        "url": "https://api.hh.ru/vacancies/103552319?host=hh.ru",
+        "requirement": "Знание HTML, CSS, JavaScript, PHP, <highlighttext>Python</highlighttext>, Ruby, SQL и прочие языки; Битрикс24. Высокий уровень ответственности. Исполнительность, аккуратность, дисциплинированность, организованность. ",
+        "responsibility": "Унифицировать (привести к единой форме) все вычислительные процессы. Создавать базу данных. Следить за слаженной работой программного обеспечения (далее ПО). "
+    },
+    {
+        "id": 102551587,
+        "name": "Бэкенд разработчик (Python/Django), программист, TON",
+        "city": "Москва",
+        "salary_from": 200000,
+        "salary_to": 400000,
+        "url": "https://api.hh.ru/vacancies/102551587?host=hh.ru",
+        "requirement": "...бэкенд <highlighttext>разработчика</highlighttext> для разработки и поддержки беззалогового кредитного протокола в блокчейне TON. Идеальный кандидат должен обладать сильными навыками в <highlighttext>Python</highlighttext>...",
+        "responsibility": "Оптимизация и масштабирование существующих систем. Работа в тесном сотрудничестве с командой фронтенд <highlighttext>разработчиков</highlighttext> для обеспечения согласованности между серверной и клиентской..."
+    },
+    {
+        "id": 103710255,
+        "name": "Python Django разработчик",
+        "city": "Новосибирск",
+        "salary_from": 80000,
+        "salary_to": 120000,
+        "url": "https://api.hh.ru/vacancies/103710255?host=hh.ru",
+        "requirement": "Ищем backend-<highlighttext>разработчика</highlighttext> с опытом от 2-х лет в команду нового проекта. Фактический опыт — минимум 1 год работы с...",
+        "responsibility": null
+    }
+]
