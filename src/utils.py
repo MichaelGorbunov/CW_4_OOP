@@ -57,5 +57,23 @@ def json_file_list():
         print(i, name_file)#вывод списка файлов JSON
     return file_list
 
+def vac_file_list():
+    """функция вывода списка файлов VAC_JSON"""
+    file_list= []
+    for entry in os.scandir(DATA_DIR):#вывод списка файлов
+        if entry.is_dir():
+            # skip directories
+            continue
+        elif entry.name.split(".")[-1] != "vac":
+            continue
+        else:
+            # print(entry.name)
+            file_list.append(entry.name)
+
+    for i, name_file in enumerate(file_list):
+        print(i, name_file)#вывод списка файлов VAC_JSON
+    return file_list
+
 # json_file_list()
-clear_vacans()
+# clear_vacans()
+vac_file_list()
