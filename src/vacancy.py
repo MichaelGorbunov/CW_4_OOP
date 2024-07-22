@@ -32,6 +32,16 @@ vac2=Vacancy(11,"name2","Город F",105,120,"https://gg.com","Уметь вс
 vac3=Vacancy(12,"name3","Город V",110,130,"https://gg.com","Уметь всё","Жить на работе")
 vac4=Vacancy(13,"name4","Город Z",120,150,"https://gg.com","Уметь всё","Жить на работе")
 
-print(vac1,vac2,vac3,vac4)
-print(Vacancy.vac_list)
+# print(vac1,vac2,vac3,vac4)
+# print(Vacancy.vac_list)
 
+
+
+vacancies_list = []
+vacancies_list.append(vac1)
+vacancies_list.append(vac2)
+vacancies_list.append(vac3)
+vacancies_list.append(vac4)
+sort_by_salary = sorted(vacancies_list, key=lambda x: x.salary_from, reverse=True)
+for item in sort_by_salary:
+    print(item)
