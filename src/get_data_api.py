@@ -3,7 +3,6 @@
 
 import requests
 
-
 # class HeadHunterAPI():
 #     """Работа с API платформы HeadHunter"""
 #
@@ -27,10 +26,12 @@ import requests
 #         return response.json()
 
 
-
 import requests
+
+
 class HeadHunterAPI():
     """Работа с API платформы HeadHunter"""
+
     def __init__(self, keyword: str):
         self.url = 'https://api.hh.ru/vacancies'
         self.params = {
@@ -39,13 +40,16 @@ class HeadHunterAPI():
             'only_with_salary': True,
             'page': 0,
             'per_page': 100,
-            }
+        }
 
     def get_vacancies(self):
         """Возвращает вакансии по заданному параметру"""
 
         response = requests.get(self.url, params=self.params)
-        return response.json()['items']
+        if response.status_code != 200:
+            return [{}]
+        else:
+            return response.json().get('items', {})
         # return response.json()
 
 # class HH(Parser):
