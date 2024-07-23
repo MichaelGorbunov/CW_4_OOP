@@ -3,7 +3,7 @@ class Vacancy:
     Класс для работы с вакансиями
     """
 
-    vac_list: list[int] = []
+    vac_list: list = []
 
     def __init__(
         self,
@@ -11,7 +11,7 @@ class Vacancy:
         name: str,
         city: str,
         salary_from: int,
-        salary_to: int | None,
+        salary_to: int,
         url: str,
         requirement: str,
         responsibility: str,
@@ -19,8 +19,8 @@ class Vacancy:
         self.id = id
         self.name = name
         self.city = city
-        self.salary_from = salary_from if salary_from is not None else 0 #None заменяем на 0
-        self.salary_to = salary_to if salary_to is not None else 0 #None заменяем на 0
+        self.salary_from = salary_from if salary_from is not None else 0  # None заменяем на 0
+        self.salary_to = salary_to if salary_to is not None else 0  # None заменяем на 0
         # self.salary_from = salary_from
         # self.salary_to = salary_to
         self.url = url
@@ -41,27 +41,67 @@ class Vacancy:
         )
 
     @classmethod
-    def vacancies_for_salary(cls)->list:
+    def vacancies_sort_salary(cls) -> list:
         """
         Сортирует вакансии по зарплате и возвращает отфильтрованный список экземпляров класса по убиванию зарплаты.
         """
+
         # cls.vac_list.sort(cls.vac_list, key=lambda x: x.salary_from, reverse=True)
-        #key=lambda book: book.pages, reverse=True
+        # key=lambda book: book.pages, reverse=True
         cls.vac_list.sort(key=lambda x: x.salary_from, reverse=True)
         return cls.vac_list
+    @classmethod
+    def vacancies_filtered_city(cls, city) -> list:
+        """
+        Сортирует вакансии по городу и возвращает список вакансий с нужным городом.
+        """
+        filter_city: list = []
+        for item in cls.vac_list:
+            if item.city == city:
+                filter_city.append(item)
+        return filter_city
 
-
-
-
-vac1=Vacancy(10,"name1","Город Н",100,None,"https://gg.com","Уметь всё ","Жить на работе")
-vac2=Vacancy(11,"name2","Город F",None,120,"https://gg.com","Знать всё","Жить на работе")
-vac3=Vacancy(12,"name3","Город V",110,130,"https://gg.com","Рулить всем","Жить на работе")
-vac4=Vacancy(13,"name4","Город Z",120,150,"https://gg.com","Ездить на всём","Жить на работе")
+vac1 = Vacancy(
+    10, "name1",
+    "Город Н",
+    100,
+    None,
+    "https://gg.com",
+    "Уметь всё ",
+    "Жить на работе"
+)
+vac2 = Vacancy(
+    11, "name2",
+    "Город F", None,
+    120, "https://gg.com",
+    "Знать всё", "Жить на работе"
+)
+vac3 = Vacancy(
+    12, "name3",
+    "Город V", 110,
+    130, "https://gg.com",
+    "Рулить всем", "Жить на работе"
+)
+vac4 = Vacancy(
+    13,
+    "name4",
+    "Город Z",
+    120,
+    150,
+    "https://gg.com",
+    "Ездить на всём",
+    "Жить на работе",
+)
 
 # print(vac1,vac2,vac3,vac4)
-Vacancy.vacancies_for_salary()
+Vacancy.vacancies_sort_salary()
 for item in Vacancy.vac_list:
     print(item)
+print("**********************************************")
+list=Vacancy.vacancies_filtered_city("Город Z")
+for item in list:
+    print(item)
+
 
 
 #
@@ -83,7 +123,6 @@ def filter_vacancies(vacancies_list: list, filter_words: list):
         # print(vacancy.requirement.lower().split())
         for word in filter_words:
             if word.lower() in vacancy.requirement.lower().split():
-
                 filtered_list.append(vacancy)
 
     if len(filtered_list) == 0:
