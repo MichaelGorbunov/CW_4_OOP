@@ -19,12 +19,14 @@ class Vacancy:
         self.id = id
         self.name = name
         self.city = city
-        self.salary_from = salary_from
-        self.salary_to = salary_to
+        self.salary_from = salary_from if salary_from is not None else 0 #None заменяем на 0
+        self.salary_to = salary_to if salary_to is not None else 0 #None заменяем на 0
+        # self.salary_from = salary_from
+        # self.salary_to = salary_to
         self.url = url
         self.requirement = requirement
         self.responsibility = responsibility
-        Vacancy.vac_list.append(id)
+        Vacancy.vac_list.append(self)
 
     def __str__(self):
         return (
@@ -38,14 +40,28 @@ class Vacancy:
             f"Обязанности: {self.responsibility}\n"
         )
 
+    @classmethod
+    def vacancies_for_salary(cls)->list:
+        """
+        Сортирует вакансии по зарплате и возвращает отфильтрованный список экземпляров класса по убиванию зарплаты.
+        """
+        # cls.vac_list.sort(cls.vac_list, key=lambda x: x.salary_from, reverse=True)
+        #key=lambda book: book.pages, reverse=True
+        cls.vac_list.sort(key=lambda x: x.salary_from, reverse=True)
+        return cls.vac_list
 
-# vac1=Vacancy(10,"name1","Город Н",100,None,"https://gg.com","Уметь всё ","Жить на работе")
-# vac2=Vacancy(11,"name2","Город F",105,120,"https://gg.com","Знать всё","Жить на работе")
-# vac3=Vacancy(12,"name3","Город V",110,130,"https://gg.com","Рулить всем","Жить на работе")
-# vac4=Vacancy(13,"name4","Город Z",120,150,"https://gg.com","Ездить на всём","Жить на работе")
+
+
+
+vac1=Vacancy(10,"name1","Город Н",100,None,"https://gg.com","Уметь всё ","Жить на работе")
+vac2=Vacancy(11,"name2","Город F",None,120,"https://gg.com","Знать всё","Жить на работе")
+vac3=Vacancy(12,"name3","Город V",110,130,"https://gg.com","Рулить всем","Жить на работе")
+vac4=Vacancy(13,"name4","Город Z",120,150,"https://gg.com","Ездить на всём","Жить на работе")
 
 # print(vac1,vac2,vac3,vac4)
-# print(Vacancy.vac_list)
+Vacancy.vacancies_for_salary()
+for item in Vacancy.vac_list:
+    print(item)
 
 
 #
@@ -55,6 +71,7 @@ class Vacancy:
 # vacancies_list.append(vac3)
 # vacancies_list.append(vac4)
 # sort_by_salary = sorted(vacancies_list, key=lambda x: x.salary_from, reverse=True)#сортировка по зарплате
+# sort_by_salary = sorted(Vacancy.vac_list, key=lambda x: x.salary_from, reverse=True)#сортировка по зарплате
 # for item in sort_by_salary:
 #     print(item)
 
