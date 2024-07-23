@@ -1,12 +1,12 @@
 import json
 import os
-from src.file_operation import JSONData
-from config import DATA_DIR
-from src.get_data_api import HeadHunterAPI
 from datetime import datetime
-from
 
-save_file_name = datetime.now().strftime('%Y_%m_%d-%H_%M')
+from config import DATA_DIR
+from src.file_operation import JSONData
+from src.get_data_api import HeadHunterAPI
+
+save_file_name = datetime.now().strftime("%Y_%m_%d-%H_%M")
 
 
 def func1():
@@ -36,19 +36,21 @@ def func1():
                 "salary_to": vacans.get("salary").get("to"),
                 "url": vacans.get("url"),
                 "requirement": vacans.get("snippet").get("requirement"),
-                "responsibility": vacans.get("snippet").get("responsibility")
+                "responsibility": vacans.get("snippet").get("responsibility"),
             }
         )
 
     # data2=JSONData(os.path.join(DATA_DIR, "my_save.json"))
     # data2.write_file(test_list)
-    with open(os.path.join(DATA_DIR, save_file_name + ".vac"), 'w', encoding='utf-8') as f:
+    with open(
+        os.path.join(DATA_DIR, save_file_name + ".vac"), "w", encoding="utf-8"
+    ) as f:
         json.dump(test_list, f, ensure_ascii=False, indent=4)
 
 
 def func2():
     # получение данных из api
-    search_vacancy = input('Введите запрос:\n')
+    search_vacancy = input("Введите запрос:\n")
     data1 = HeadHunterAPI.get_vacancies(HeadHunterAPI(search_vacancy))
 
     test_list = []
@@ -61,7 +63,11 @@ def func2():
 
     # data2=JSONData(os.path.join(DATA_DIR, save_file_name+"_"+search_vacancy+".json"))
     # data2.write_file(test_list)
-    with open(os.path.join(DATA_DIR, save_file_name + "_" + search_vacancy + ".json"), 'w', encoding='utf-8') as f:
+    with open(
+        os.path.join(DATA_DIR, save_file_name + "_" + search_vacancy + ".json"),
+        "w",
+        encoding="utf-8",
+    ) as f:
         json.dump(test_list, f, ensure_ascii=False, indent=4)
 
 

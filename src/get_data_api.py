@@ -26,20 +26,17 @@ import requests
 #         return response.json()
 
 
-import requests
-
-
-class HeadHunterAPI():
+class HeadHunterAPI:
     """Работа с API платформы HeadHunter"""
 
     def __init__(self, keyword: str):
-        self.url = 'https://api.hh.ru/vacancies'
+        self.url = "https://api.hh.ru/vacancies"
         self.params = {
-            'text': keyword,
-            'area': 113,
-            'only_with_salary': True,
-            'page': 0,
-            'per_page': 100,
+            "text": keyword,
+            "area": 113,
+            "only_with_salary": True,
+            "page": 0,
+            "per_page": 100,
         }
 
     def get_vacancies(self):
@@ -49,8 +46,9 @@ class HeadHunterAPI():
         if response.status_code != 200:
             return [{}]
         else:
-            return response.json().get('items', {})
+            return response.json().get("items", {})
         # return response.json()
+
 
 # class HH(Parser):
 #     """ Класс для работы с API HeadHunter """

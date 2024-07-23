@@ -2,8 +2,20 @@ class Vacancy:
     """
     Класс для работы с вакансиями
     """
-    vac_list = []
-    def __init__(self,id:int, name: str, city: str, salary_from: int, salary_to: int|None, url: str, requirement: str,responsibility:str):
+
+    vac_list: list[int] = []
+
+    def __init__(
+        self,
+        id: int,
+        name: str,
+        city: str,
+        salary_from: int,
+        salary_to: int | None,
+        url: str,
+        requirement: str,
+        responsibility: str,
+    ):
         self.id = id
         self.name = name
         self.city = city
@@ -15,16 +27,16 @@ class Vacancy:
         Vacancy.vac_list.append(id)
 
     def __str__(self):
-        return (f"{self.name}\n"
-                f"Id: {self.id}\n"
-                f"Город: {self.city}\n"
-                f"Зарплата от: {self.salary_from } \n"
-                f"Зарплата до: {self.salary_to if self.salary_to else "Не указана"} \n"
-                f"Ссылка: {self.url}\n"
-                f"Требования: {self.requirement}\n"
-                f"Обязанности: {self.responsibility}\n")
-
-
+        return (
+            f"{self.name}\n"
+            f"Id: {self.id}\n"
+            f"Город: {self.city}\n"
+            f"Зарплата от: {self.salary_from} \n"
+            f"Зарплата до: {self.salary_to if self.salary_to else "Не указана"} \n"
+            f"Ссылка: {self.url}\n"
+            f"Требования: {self.requirement}\n"
+            f"Обязанности: {self.responsibility}\n"
+        )
 
 
 # vac1=Vacancy(10,"name1","Город Н",100,None,"https://gg.com","Уметь всё ","Жить на работе")
@@ -46,6 +58,7 @@ class Vacancy:
 # for item in sort_by_salary:
 #     print(item)
 
+
 def filter_vacancies(vacancies_list: list, filter_words: list):
     """Фильтрация вакансий по ключевым словам"""
     filtered_list = []
@@ -56,10 +69,12 @@ def filter_vacancies(vacancies_list: list, filter_words: list):
 
                 filtered_list.append(vacancy)
 
-    if len(filtered_list)==0:
+    if len(filtered_list) == 0:
         print(*filter_words)
         print("Вакансий с такими критериями не найден")
     return filtered_list
+
+
 # filter_words=["уметь","знать"]
 # filter_words=["супермен,мегамозг"]
 
