@@ -89,4 +89,29 @@ def func2():
 #         print(entry.name)
 
 
-func2()
+# func2()
+def func3():
+    # получение коротки[ данных из api
+    search_vacancy = input("Введите запрос:\n")
+    # data1 = HeadHunterAPI.get_vacans_short(HeadHunterAPI(search_vacancy))
+    data1 = HeadHunterAPI(search_vacancy).get_vacans_short()
+    # data1 =data11.get_vacans_short()
+
+    test_list = []
+    # print(len(data1))
+    for item in data1:
+        test_list.append(item)
+    #     print(item)
+    #     print(item["area"]["name"])  # city
+    print(type(data1))
+
+    # data2=JSONData(os.path.join(DATA_DIR, save_file_name+"_"+search_vacancy+".json"))
+    # data2.write_file(test_list)
+    with open(
+        os.path.join(DATA_DIR, save_file_name + "_" + search_vacancy + ".vac"),
+        "w",
+        encoding="utf-8",
+    ) as f:
+        json.dump(test_list, f, ensure_ascii=False, indent=4)
+
+func3()
