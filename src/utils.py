@@ -3,6 +3,8 @@ import os
 from src.file_operation import JSONData
 from config import DATA_DIR
 from datetime import datetime
+from src.vacancy import Vacancy
+from src.vacancy import filter_vacancies
 
 
 def clear_vacans():
@@ -29,8 +31,8 @@ def clear_vacans():
                 "salary_to": vacans.get("salary").get("to"),
                 # "salary_to": vacans.get("salary").get("to") if vacans.get("salary").get("to") is not None else 0 ,
                 "url": vacans.get("url"),
-                "requirement": vacans.get("snippet").get("requirement"),
-                "responsibility": vacans.get("snippet").get("responsibility")
+                "requirement": vacans.get("snippet").get("requirement") if vacans.get("snippet").get("requirement") is not None else "Не указано",
+                "responsibility": vacans.get("snippet").get("responsibility") if vacans.get("snippet").get("responsibility") is not None else "Не указано"
             }
         )
 
@@ -77,5 +79,40 @@ def vac_file_list():
 
 
 # json_file_list()
-clear_vacans()
+# clear_vacans()
 # vac_file_list()
+
+def load_file()->list:
+    print("Список файлов в папке DATA")
+    m = vac_file_list()
+    # file_name = input("Введите имя файла в директории дата \n")
+    file_index = int(input("Введите индекс файла из списка \n"))
+    file_name = m[file_index]
+    file_path = os.path.join(DATA_DIR, file_name)
+    with open(file_path, encoding='utf-8') as json_file:
+        data_list = json.load(json_file)
+    return data_list
+
+def vac_obj_from_file()->list:
+    """функция создания списка объектов класс Vacancy вакансий из vac-файла"""
+    vac_list = load_file()
+
+    new_list = []
+    for item in vac_list:
+        # print(item)
+        new_list.append(
+            Vacancy(item.get("id"), item.get("name"), item.get("city"), item.get("salary_from"), item.get("salary_to"),
+                    item.get("url"), item.get("requirement"), item.get("responsibility")))
+    return new_list
+
+# print(Vacancy.vac_list)
+# filter_words = ["Python","Docker"]
+# Telegram
+filter_words = ["SQL"]
+new_list=vac_obj_from_file()
+
+print("**********************************************")
+filtered_vac = filter_vacancies(new_list, filter_words)
+print(f"Найдено :{len(filtered_vac)} вакансий")
+for item in filtered_vac:
+    print(item)
