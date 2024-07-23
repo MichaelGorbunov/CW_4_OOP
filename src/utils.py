@@ -128,8 +128,10 @@ def vac_obj_from_file() -> list:
 # print(Vacancy.vac_list)
 # filter_words = ["Python","Docker"]
 # Telegram
-filter_words = ["SQL"]
+# filter_words = ["SQL"]
 new_list = vac_obj_from_file()
+filter_words=input("введите ключевые слова через зпт").split(",")
+
 
 print("**********************************************")
 filtered_vac = filter_vacancies(new_list, filter_words)
