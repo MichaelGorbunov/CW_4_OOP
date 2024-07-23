@@ -48,6 +48,37 @@ class HeadHunterAPI:
         else:
             return response.json().get("items", {})
         # return response.json()
+    def get_vacans_short(self):
+        """
+        Метод для получения упрощенной информации о вакансии.
+        :return: vacancies - список словарей с вакансиями
+        """
+        vacancies: list = []
+        for vacans in self.get_vacancies():
+            vacancies.append(
+                {
+                    "id": int(vacans.get("id")),
+                    "name": vacans.get("name"),
+                    "city": vacans.get("area").get("name"),
+                    # "salary_from": vacans.get("salary").get("from"),
+                    "salary_from": vacans.get("salary").get("from") if vacans.get("salary").get(
+                        "from") is not None else 0,
+                    # "salary_to": vacans.get("salary").get("to"),
+                    "salary_to": vacans.get("salary").get("to") if vacans.get("salary").get("to") is not None else 0,
+                    "url": vacans.get("url"),
+                    "requirement": (
+                        vacans.get("snippet").get("requirement")
+                        if vacans.get("snippet").get("requirement") is not None
+                        else "Не указано"
+                    ),
+                    "responsibility": (
+                        vacans.get("snippet").get("responsibility")
+                        if vacans.get("snippet").get("responsibility") is not None
+                        else "Не указано"
+                    ),
+                }
+            )
+        return vacancies
 
 
 # class HH(Parser):
