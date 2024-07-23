@@ -4,6 +4,7 @@ from src.file_operation import JSONData
 from config import DATA_DIR
 from src.get_data_api import HeadHunterAPI
 from datetime import datetime
+from
 
 save_file_name = datetime.now().strftime('%Y_%m_%d-%H_%M')
 def func1():
