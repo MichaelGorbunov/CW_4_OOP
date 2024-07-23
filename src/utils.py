@@ -100,9 +100,11 @@ def vac_obj_from_file()->list:
     new_list = []
     for item in vac_list:
         # print(item)
-        new_list.append(
-            Vacancy(item.get("id"), item.get("name"), item.get("city"), item.get("salary_from"), item.get("salary_to"),
-                    item.get("url"), item.get("requirement"), item.get("responsibility")))
+        # new_list.append(
+        #     Vacancy(item.get("id"), item.get("name"), item.get("city"), item.get("salary_from"), item.get("salary_to"),
+        #             item.get("url"), item.get("requirement"), item.get("responsibility")))
+        new_list.append(Vacancy(**item))
+
     return new_list
 
 # print(Vacancy.vac_list)
