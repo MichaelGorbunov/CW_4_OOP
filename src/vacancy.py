@@ -1,3 +1,6 @@
+from builtins import list
+
+
 class Vacancy:
     """
     Класс для работы с вакансиями
@@ -19,7 +22,9 @@ class Vacancy:
         self.id = id
         self.name = name
         self.city = city
-        self.salary_from = salary_from if salary_from is not None else 0  # None заменяем на 0
+        self.salary_from = (
+            salary_from if salary_from is not None else 0
+        )  # None заменяем на 0
         self.salary_to = salary_to if salary_to is not None else 0  # None заменяем на 0
         # self.salary_from = salary_from
         # self.salary_to = salary_to
@@ -50,6 +55,7 @@ class Vacancy:
         # key=lambda book: book.pages, reverse=True
         cls.vac_list.sort(key=lambda x: x.salary_from, reverse=True)
         return cls.vac_list
+
     @classmethod
     def vacancies_filtered_city(cls, city) -> list:
         """
@@ -61,26 +67,29 @@ class Vacancy:
                 filter_city.append(item)
         return filter_city
 
+    @classmethod
+    def filter_vacancies(cls, vacancies_list: list, filter_words: list) -> list:
+        """Фильтрация вакансий по ключевым словам"""
+        filtered_list = []
+        for vacancy in vacancies_list:
+            for word in filter_words:
+                if word.lower() in vacancy.requirement.lower().split():
+                    filtered_list.append(vacancy)
+
+        if len(filtered_list) == 0:
+            print(*filter_words)
+            print("Вакансий с такими критериями не найден")
+        return filtered_list
+
+
 vac1 = Vacancy(
-    10, "name1",
-    "Город Н",
-    100,
-    None,
-    "https://gg.com",
-    "Уметь всё ",
-    "Жить на работе"
+    10, "name1", "Город Н", 100, None, "https://gg.com", "Уметь всё ", "Жить на работе"
 )
 vac2 = Vacancy(
-    11, "name2",
-    "Город F", None,
-    120, "https://gg.com",
-    "Знать всё", "Жить на работе"
+    11, "name2", "Город F", None, 120, "https://gg.com", "Знать всё", "Жить на работе"
 )
 vac3 = Vacancy(
-    12, "name3",
-    "Город V", 110,
-    130, "https://gg.com",
-    "Рулить всем", "Жить на работе"
+    12, "name3", "Город V", 110, 130, "https://gg.com", "Рулить всем", "Жить на работе"
 )
 vac4 = Vacancy(
     13,
@@ -93,15 +102,25 @@ vac4 = Vacancy(
     "Жить на работе",
 )
 
-# print(vac1,vac2,vac3,vac4)
-Vacancy.vacancies_sort_salary()
-for item in Vacancy.vac_list:
-    print(item)
+filter_words=["уметь","знать"]
+# filter_words=["супермен,мегамозг"]
+
 print("**********************************************")
-list=Vacancy.vacancies_filtered_city("Город Z")
-for item in list:
+vac_list=Vacancy.vac_list
+filtered_vac=Vacancy.filter_vacancies(vac_list,filter_words)
+for item in filtered_vac:
     print(item)
 
+
+
+# # print(vac1,vac2,vac3,vac4)
+# Vacancy.vacancies_sort_salary()
+# for item in Vacancy.vac_list:
+#     print(item)
+# print("**********************************************")
+# list = Vacancy.vacancies_filtered_city("Город Z")
+# for item in list:
+#     print(item)
 
 
 #
@@ -116,25 +135,16 @@ for item in list:
 #     print(item)
 
 
-def filter_vacancies(vacancies_list: list, filter_words: list):
-    """Фильтрация вакансий по ключевым словам"""
-    filtered_list = []
-    for vacancy in vacancies_list:
-        # print(vacancy.requirement.lower().split())
-        for word in filter_words:
-            if word.lower() in vacancy.requirement.lower().split():
-                filtered_list.append(vacancy)
-
-    if len(filtered_list) == 0:
-        print(*filter_words)
-        print("Вакансий с такими критериями не найден")
-    return filtered_list
-
-
-# filter_words=["уметь","знать"]
-# filter_words=["супермен,мегамозг"]
-
-# print("**********************************************")
-# filtered_vac=filter_vacancies(sort_by_salary,filter_words)
-# for item in filtered_vac:
-#     print(item)
+# def filter_vacancies(vacancies_list: list, filter_words: list):
+#     """Фильтрация вакансий по ключевым словам"""
+#     filtered_list = []
+#     for vacancy in vacancies_list:
+#         # print(vacancy.requirement.lower().split())
+#         for word in filter_words:
+#             if word.lower() in vacancy.requirement.lower().split():
+#                 filtered_list.append(vacancy)
+#
+#     if len(filtered_list) == 0:
+#         print(*filter_words)
+#         print("Вакансий с такими критериями не найден")
+#     return filtered_list
