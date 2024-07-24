@@ -28,9 +28,17 @@ def clear_vacans():
                 "name": vacans.get("name"),
                 "city": vacans.get("area").get("name"),
                 # "salary_from": vacans.get("salary").get("from"),
-                "salary_from": vacans.get("salary").get("from") if vacans.get("salary").get("from") is not None else 0 ,
+                "salary_from": (
+                    vacans.get("salary").get("from")
+                    if vacans.get("salary").get("from") is not None
+                    else 0
+                ),
                 # "salary_to": vacans.get("salary").get("to"),
-                "salary_to": vacans.get("salary").get("to") if vacans.get("salary").get("to") is not None else 0 ,
+                "salary_to": (
+                    vacans.get("salary").get("to")
+                    if vacans.get("salary").get("to") is not None
+                    else 0
+                ),
                 "url": vacans.get("url"),
                 "requirement": (
                     vacans.get("snippet").get("requirement")
@@ -130,7 +138,7 @@ def vac_obj_from_file() -> list:
 # Telegram
 # filter_words = ["SQL"]
 new_list = vac_obj_from_file()
-filter_words=input("введите ключевые слова через зпт").split(",")
+filter_words = input("введите ключевые слова через зпт").split(",")
 
 
 print("**********************************************")
