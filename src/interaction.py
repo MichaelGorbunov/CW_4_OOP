@@ -1,12 +1,14 @@
-from src.vacancy import Vacancy
-from src.get_data_api import HeadHunterAPI
 from src.file_operation import FileOperation, load_file
+from src.get_data_api import HeadHunterAPI
+from src.vacancy import Vacancy
 
 
 def select_source():
     """функция выбора источника данных"""
-    print("Здравствуйте.Это программа выводит информацию о вакансиях,\n"
-          "опубликованных на сайте hh.ru")
+    print(
+        "Здравствуйте.Это программа выводит информацию о вакансиях,\n"
+        "опубликованных на сайте hh.ru"
+    )
     print("Выберите источник данных")
     print("0 - данные с сайта hh.ru")
     print("1 - загрузка из файла")
@@ -20,7 +22,7 @@ def select_source():
         return search_vacancy, vac_data_list
     elif select_sourse == "1":
         vac_data_list, file_name = load_file()
-        if vac_data_list ==['']:
+        if vac_data_list == [""]:
             exit(0)
         search_vacancy = file_name.split("_")[0]
         return search_vacancy, vac_data_list
@@ -81,7 +83,7 @@ def filtered_vac_from_salary_range(sort_vac_obj_list):
     print("в которых граница не задана")
 
     salary_list = input("Введите диапазон через запятую : ").split(",")
-    if salary_list == ['']:
+    if salary_list == [""]:
         salary_list = ["0", "0"]
     in_salary_from, in_salary_to = map(int, salary_list)
 
@@ -99,8 +101,10 @@ def filtered_vac_from_keywords(sort_vac_obj_list):
 
     keyword_list = input("Введите ключевые слова : ").split(",")
     print(keyword_list)
-    if keyword_list != ['']:
-        filter_keyword_vac_obj_list = Vacancy.filter_vacancies(sort_vac_obj_list, keyword_list)
+    if keyword_list != [""]:
+        filter_keyword_vac_obj_list = Vacancy.filter_vacancies(
+            sort_vac_obj_list, keyword_list
+        )
         return filter_keyword_vac_obj_list
     else:
         filter_keyword_vac_obj_list = sort_vac_obj_list

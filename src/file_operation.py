@@ -1,6 +1,7 @@
 import json
 import os
 from datetime import datetime
+
 from config import DATA_DIR
 from src.vacancy import Vacancy
 
@@ -11,7 +12,7 @@ class FileOperation:
     def __init__(self, filename: str):
         # if filename is None:
         #     filename = datetime.now().strftime("%Y_%m_%d-%H_%M")
-        self.filename = filename+"_"+datetime.now().strftime("%Y_%m_%d-%H_%M")
+        self.filename = filename + "_" + datetime.now().strftime("%Y_%m_%d-%H_%M")
 
     def load_file(self):
         with open(self.filename, encoding="utf-8") as json_file:
@@ -20,9 +21,9 @@ class FileOperation:
 
     def write_file(self, data_list: list):
         with open(
-                os.path.join(DATA_DIR, self.filename + ".vac"),
-                "w",
-                encoding="utf-8",
+            os.path.join(DATA_DIR, self.filename + ".vac"),
+            "w",
+            encoding="utf-8",
         ) as f:
             json.dump(data_list, f, ensure_ascii=False, indent=4)
 
@@ -55,19 +56,16 @@ def vac_obj_from_file() -> list:
 
 
 def load_file() -> list:
-    """метод выбора файла в папке DATA и его чтения """
+    """метод выбора файла в папке DATA и его чтения"""
     print("Список файлов в папке DATA")
     file_list = vac_file_list()
     if len(file_list) == 0:
         print("файлов не найдено")
-        return [''],""
+        return [""], ""
     # file_name = input("Введите имя файла в директории дата \n")
     file_index = int(input("Введите индекс файла из списка \n"))
     file_name = file_list[file_index]
     file_path = os.path.join(DATA_DIR, file_name)
     with open(file_path, encoding="utf-8") as json_file:
         data_list = json.load(json_file)
-    return data_list,file_name
-
-
-
+    return data_list, file_name
