@@ -1,4 +1,6 @@
 from builtins import list
+# import os
+# import time
 
 
 class Vacancy:
@@ -44,6 +46,22 @@ class Vacancy:
             f"Требования: {self.requirement}\n"
             f"Обязанности: {self.responsibility}\n"
         )
+
+    def vac_obj_to_dict(self):
+        """метод преобразования объекта вакансии в словарь"""
+        dict_of_vac={
+            "id": self.id,
+            "name": self.name,
+            "city": self.city,
+            "salary_from": self.salary_from,
+            "salary_to": self.salary_to,
+            "url": self.url,
+            "requirement": self.requirement,
+            "responsibility": self.responsibility,
+        }
+        return dict_of_vac
+
+
 
     @classmethod
     def vacancies_sort_salary(cls) -> list:
@@ -128,7 +146,7 @@ def func2():
         print(item)
 
 
-func1()
+# func1()
 
 
 # func2()
@@ -145,7 +163,9 @@ def func3():
     # print(Vacancy.vac_list[1].salary_to)
 
 
-func3()
+# func3()
+
+
 
 # # print(vac1,vac2,vac3,vac4)
 # Vacancy.vacancies_sort_salary()
