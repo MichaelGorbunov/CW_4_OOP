@@ -26,30 +26,61 @@ def user_interaction():
     for item in sort_vac_obj_list:
         print(item)
 
+    # print("Сохранимся")
+    #
+    #
+    # vac_dict_list=[]
+    # for item in sort_vac_obj_list:#сериализация в json
+    #     vac_dict_list.append(Vacancy.vac_obj_to_dict(item))
+    #
+    #
+    # save=FileOperation(search_vacancy)
+    # save.write_file(vac_dict_list)
+
+    print("Отфильтруем вакансии по зарплатной вилке")
+    print("Ведите через запятую желаемый уровень зарплаты,")
+    print("от минимально приемлимого до желаемого,")
+    print("например 50000,70000")
+    print("если указать 0 в качестве одной из границ в диапазон попадут зарплаты," )
+    print("в которых граница не задана")
+
+    in_salary_from, in_salary_to = map(int, input("Введите диапазон через запятую : ").split(","))
+
+    for item in sort_vac_obj_list:
+        if Vacancy.range_from_salary(item,in_salary_from,in_salary_to) is False:
+            sort_vac_obj_list.remove(item)
+    print(f"осталось - {len(sort_vac_obj_list)} вакансий  ")
+    # for item in sort_vac_obj_list:
+    #     print(item)
+
+    print("Отфильтруем по ключевым словам")
+    print("Введите через запятую ключевые слова,")
+    print("например - без опыта,обучение")
+
+    keyword_list=input("Введите ключевые слова : ").split(",")
+    print(keyword_list)
+    if keyword_list == '':
+        filter_keyword_vac_obj_list=Vacancy.filter_vacancies(sort_vac_obj_list,keyword_list)
+    else:
+        filter_keyword_vac_obj_list=sort_vac_obj_list
+    print(f"осталось - {len(filter_keyword_vac_obj_list)} вакансий  ")
+
+
+
+
     print("Сохранимся")
 
-    # import json
-    #
-    # # data - строка, тип str
-    # data = '{"name": "John Smith", "age": 30, "city": "New York"}'
-    # # parsed_data - словарь, тип dict
-    # parsed_data = json.loads(data)
-    vac_dict_list=[]
-    for item in sort_vac_obj_list:#сериализация в json
-        vac_dict_list.append(
-            {
-                "id": item.id,
-                "name": item.name,
-                "city": item.city,
-                "salary_from": item.salary_from,
-                "salary_to": item.salary_to,
-                "url": item.url,
-                "requirement": item.requirement,
-                "responsibility": item.responsibility,
-            })
+    vac_dict_list = []
+    for item in filter_keyword_vac_obj_list:  # сериализация в json
+        vac_dict_list.append(Vacancy.vac_obj_to_dict(item))
 
-    save=FileOperation(search_vacancy)
+    save = FileOperation(search_vacancy)
     save.write_file(vac_dict_list)
+
+
+
+
+
 
 
 
