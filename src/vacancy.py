@@ -90,6 +90,7 @@ class Vacancy:
         """Фильтрация вакансий по ключевым словам"""
         filtered_list = []
         for vacancy in vacancies_list:
+            # print(vacancy.requirement)#отладка
             for word in filter_words:
                 if word.lower() in vacancy.requirement.lower().split():
                     filtered_list.append(vacancy)
