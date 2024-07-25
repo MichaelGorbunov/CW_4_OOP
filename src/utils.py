@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 from config import DATA_DIR
-from src.file_operation import JSONData
+from src.file_operation import FileOperation
 from src.vacancy import Vacancy, filter_vacancies
 
 
