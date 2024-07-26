@@ -1,110 +1,103 @@
-def func1():
-    vac1 = Vacancy(
+import pytest
+from src.vacancy import Vacancy
+
+
+@pytest.fixture()
+def Vacancy1():
+    Vac1 = Vacancy(
         10,
         "name1",
         "Город Н",
         100,
         None,
         "https://gg.com",
-        "Уметь всё ",
+        "Уметь всё",
         "Жить на работе",
     )
-    vac2 = Vacancy(
+    return Vac1
+
+
+@pytest.fixture()
+def Vacancy2():
+    Vac2 = Vacancy(
         11,
         "name2",
-        "Город F",
-        None,
+        "Город M",
+        110,
         120,
         "https://gg.com",
         "Знать всё",
         "Жить на работе",
     )
-    vac3 = Vacancy(
-        12,
-        "name3",
-        "Город V",
-        110,
-        130,
-        "https://gg.com",
-        "Рулить всем",
-        "Жить на работе",
-    )
-    vac4 = Vacancy(
-        13,
-        "name4",
-        "Город Z",
-        120,
-        150,
-        "https://gg.com",
-        "Ездить на всём",
-        "Жить на работе",
-    )
+    return Vac2
 
 
-def func2():
-    filter_words = ["уметь", "знать"]
-    # filter_words=["супермен,мегамозг"]
-
-    print("**********************************************")
-    vac_list = Vacancy.vac_list
-    filtered_vac = Vacancy.filter_vacancies(vac_list, filter_words)
-    for item in filtered_vac:
-        print(item)
-
-
-# func1()
+def test_vacancy_init(Vacancy1):
+    """проверка инициализации объекта в классе Vacancy"""
+    assert Vacancy1.id == 10
+    assert Vacancy1.name == "name1"
+    assert Vacancy1.city == "Город Н"
+    assert Vacancy1.salary_from == 100
+    assert Vacancy1.salary_to == 0
+    assert Vacancy1.url == "https://gg.com"
+    assert Vacancy1.requirement == "Уметь всё"
+    assert Vacancy1.responsibility == "Жить на работе"
 
 
-# func2()
+def test_vac_obj_to_dict(Vacancy1):
+    """ проверка преобразования объекта класса в словарь"""
+    vacansy_dict = Vacancy.vac_obj_to_dict(Vacancy1)
+    assert vacansy_dict.get("name") == "name1"
+    assert vacansy_dict.get("id") == 10
+    assert vacansy_dict.get("name") == "name1"
+    assert vacansy_dict.get("city") == "Город Н"
+    assert vacansy_dict.get("salary_from") == 100
+    assert vacansy_dict.get("salary_to") == 0
+    assert vacansy_dict.get("url") == "https://gg.com"
+    assert vacansy_dict.get("requirement") == "Уметь всё"
+    assert vacansy_dict.get("responsibility") == "Жить на работе"
 
 
-def func3():
-    vac_list = Vacancy.vac_list
-    sort_list = []
-    for item in vac_list:
-        if Vacancy.range_from_salary(item, 0, 0) is True:
-            sort_list.append(item)
-            print(item)
-    print(sort_list)
-    # print(Vacancy.vac_list)
-    # print(Vacancy.vac_list[1].salary_to)
+def test_vacancies_sort_salary(Vacancy2):
+    vac_obj=Vacancy2
+    vacans_sort_list = Vacancy.vacancies_sort_salary()
+    # assert len(vacans_sort_list) == 4
+    assert vacans_sort_list[0].name == "name2"
+    assert vacans_sort_list[1].name == "name1"
+
+def test_filter_vacancies(Vacancy2,Vacancy1):
+    vac_list=[]
+    vac_list.append(Vacancy2)
+    vac_list.append(Vacancy1)
+    filter_words = ["уметь"]
+    filtered_vac=Vacancy.filter_vacancies(vac_list,filter_words)
+    assert len(filtered_vac)==1
+    assert filtered_vac[0].name == "name1"
 
 
-# func3()
+def test_filter_vacancies_wrong_word(Vacancy2,Vacancy1):
+    vac_list=[]
+    vac_list.append(Vacancy2)
+    vac_list.append(Vacancy1)
+    filter_words = ["абракадабра"]
+    filtered_vac=Vacancy.filter_vacancies(vac_list,filter_words)
+    assert len(filtered_vac)==0
 
 
-# # print(vac1,vac2,vac3,vac4)
-# Vacancy.vacancies_sort_salary()
-# for item in Vacancy.vac_list:
-#     print(item)
-# print("**********************************************")
-# list = Vacancy.vacancies_filtered_city("Город Z")
-# for item in list:
-#     print(item)
+def test_range_from_salary_wrong(Vacancy2):
+    test_vac=Vacancy2
+    assert Vacancy.range_from_salary(test_vac,200,300) is False
 
 
-#
-# vacancies_list = []
-# vacancies_list.append(vac1)
-# vacancies_list.append(vac2)
-# vacancies_list.append(vac3)
-# vacancies_list.append(vac4)
-# sort_by_salary = sorted(vacancies_list, key=lambda x: x.salary_from, reverse=True)#сортировка по зарплате
-# sort_by_salary = sorted(Vacancy.vac_list, key=lambda x: x.salary_from, reverse=True)#сортировка по зарплате
-# for item in sort_by_salary:
-#     print(item)
+def test_range_from_salary_pass(Vacancy1):
+    test_vac = Vacancy1
+    assert Vacancy.range_from_salary(test_vac, 0, 0) is True
 
 
-# def filter_vacancies(vacancies_list: list, filter_words: list):
-#     """Фильтрация вакансий по ключевым словам"""
-#     filtered_list = []
-#     for vacancy in vacancies_list:
-#         # print(vacancy.requirement.lower().split())
-#         for word in filter_words:
-#             if word.lower() in vacancy.requirement.lower().split():
-#                 filtered_list.append(vacancy)
-#
-#     if len(filtered_list) == 0:
-#         print(*filter_words)
-#         print("Вакансий с такими критериями не найден")
-#     return filtered_list
+def test_str(Vacancy1):
+    test_vac = Vacancy1
+    string_of_obj = str(test_vac).replace("\n"," ")
+    assert string_of_obj=="name1 Id: 10 Город: Город Н Зарплата от: 100  Зарплата до: Не указана  Ссылка: https://gg.com Требования: Уметь всё Обязанности: Жить на работе "
+
+
+
