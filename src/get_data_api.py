@@ -1,42 +1,34 @@
 # https://api.hh.ru/vacancies?currency=RUR&only_with_salary=true&area=113&per_page=100&text=разработчик
 # https://api.hh.ru/openapi/redoc#tag/Poisk-vakansij/operation/get-vacancies
 
+
 import requests
-
-# class HeadHunterAPI():
-#     """Работа с API платформы HeadHunter"""
-#
-#     # def __init__(self, keyword: str):
-#     def __init__(self):
-#         self.url = 'https://api.hh.ru/vacancies'
-#         self.params = {
-#             # 'text': "keyword",
-#             'area': 113,
-#             'only_with_salary': True,
-#             'page': 0,
-#             'per_page': 100,
-#         }
-#
-#     def get_vacancies(self, keyword: str):
-#         """Возвращает вакансии по заданному параметру"""
-#         self.params["text"] = keyword
-#
-#         response = requests.get(self.url, params=self.params)
-#         # return response.json()['items']
-#         return response.json()
+from abc import ABC, abstractmethod
 
 
-class HeadHunterAPI:
-    """Работа с API платформы HeadHunter"""
+class JobsAPI(ABC):
+    """Работа с API платформ по поиску работы"""
+
+    @abstractmethod
+    def __init__(self):
+        pass
+
+    @abstractmethod
+    def get_vacans_short(self):
+        pass
+
+
+class HeadHunterAPI(JobsAPI):
+    """класс для получения вакансий из API платформы HeadHunter"""
 
     def __init__(self, keyword: str):
         self.url = "https://api.hh.ru/vacancies"
         self.params = {
             "text": keyword,
-            "area": 113,
-            "only_with_salary": True,
+            "area": 113,#Россия
+            "only_with_salary": True,#Указана зарплата
             "page": 0,
-            "per_page": 100,
+            "per_page": 100,#Вакансий на странице
         }
 
     def get_vacancies(self):
