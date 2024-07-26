@@ -2,8 +2,9 @@
 # https://api.hh.ru/openapi/redoc#tag/Poisk-vakansij/operation/get-vacancies
 
 
-import requests
 from abc import ABC, abstractmethod
+
+import requests
 
 
 class JobsAPI(ABC):
@@ -25,10 +26,10 @@ class HeadHunterAPI(JobsAPI):
         self.url = "https://api.hh.ru/vacancies"
         self.params = {
             "text": keyword,
-            "area": 113,#Россия
-            "only_with_salary": True,#Указана зарплата
+            "area": 113,  # Россия
+            "only_with_salary": True,  # Указана зарплата
             "page": 0,
-            "per_page": 100,#Вакансий на странице
+            "per_page": 100,  # Вакансий на странице
         }
 
     def get_vacancies(self):

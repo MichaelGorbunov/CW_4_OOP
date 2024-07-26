@@ -111,3 +111,15 @@ class Vacancy:
             else:
                 return False
                 # return self
+
+
+Vac1 = Vacancy(
+    10,
+    "name1",
+    "Город Н",
+    100,
+    None,
+    "https://gg.com",
+    "Уметь всё",
+    "Жить на работе",
+)

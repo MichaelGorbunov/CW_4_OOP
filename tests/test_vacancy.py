@@ -1,4 +1,5 @@
 import pytest
+
 from src.vacancy import Vacancy
 
 
@@ -45,7 +46,7 @@ def test_vacancy_init(Vacancy1):
 
 
 def test_vac_obj_to_dict(Vacancy1):
-    """ проверка преобразования объекта класса в словарь"""
+    """проверка преобразования объекта класса в словарь"""
     vacansy_dict = Vacancy.vac_obj_to_dict(Vacancy1)
     assert vacansy_dict.get("name") == "name1"
     assert vacansy_dict.get("id") == 10
@@ -59,34 +60,35 @@ def test_vac_obj_to_dict(Vacancy1):
 
 
 def test_vacancies_sort_salary(Vacancy2):
-    vac_obj=Vacancy2
+    vac_obj = Vacancy2
     vacans_sort_list = Vacancy.vacancies_sort_salary()
     # assert len(vacans_sort_list) == 4
     assert vacans_sort_list[0].name == "name2"
     assert vacans_sort_list[1].name == "name1"
 
-def test_filter_vacancies(Vacancy2,Vacancy1):
-    vac_list=[]
+
+def test_filter_vacancies(Vacancy2, Vacancy1):
+    vac_list = []
     vac_list.append(Vacancy2)
     vac_list.append(Vacancy1)
     filter_words = ["уметь"]
-    filtered_vac=Vacancy.filter_vacancies(vac_list,filter_words)
-    assert len(filtered_vac)==1
+    filtered_vac = Vacancy.filter_vacancies(vac_list, filter_words)
+    assert len(filtered_vac) == 1
     assert filtered_vac[0].name == "name1"
 
 
-def test_filter_vacancies_wrong_word(Vacancy2,Vacancy1):
-    vac_list=[]
+def test_filter_vacancies_wrong_word(Vacancy2, Vacancy1):
+    vac_list = []
     vac_list.append(Vacancy2)
     vac_list.append(Vacancy1)
     filter_words = ["абракадабра"]
-    filtered_vac=Vacancy.filter_vacancies(vac_list,filter_words)
-    assert len(filtered_vac)==0
+    filtered_vac = Vacancy.filter_vacancies(vac_list, filter_words)
+    assert len(filtered_vac) == 0
 
 
 def test_range_from_salary_wrong(Vacancy2):
-    test_vac=Vacancy2
-    assert Vacancy.range_from_salary(test_vac,200,300) is False
+    test_vac = Vacancy2
+    assert Vacancy.range_from_salary(test_vac, 200, 300) is False
 
 
 def test_range_from_salary_pass(Vacancy1):
@@ -96,8 +98,9 @@ def test_range_from_salary_pass(Vacancy1):
 
 def test_str(Vacancy1):
     test_vac = Vacancy1
-    string_of_obj = str(test_vac).replace("\n"," ")
-    assert string_of_obj=="name1 Id: 10 Город: Город Н Зарплата от: 100  Зарплата до: Не указана  Ссылка: https://gg.com Требования: Уметь всё Обязанности: Жить на работе "
-
-
-
+    string_of_obj = str(test_vac).replace("\n", " ")
+    assert (
+        string_of_obj
+        == "name1 Id: 10 Город: Город Н Зарплата от: 100  Зарплата до: Не указана  Ссылка: https://gg.com "
+        "Требования: Уметь всё Обязанности: Жить на работе "
+    )
