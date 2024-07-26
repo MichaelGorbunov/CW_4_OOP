@@ -63,7 +63,7 @@ def test_vacancies_sort_salary(Vacancy2):
     vac_obj = Vacancy2
     vacans_sort_list = Vacancy.vacancies_sort_salary()
     # assert len(vacans_sort_list) == 4
-    assert vacans_sort_list[0].name == "name2"
+    assert vacans_sort_list[0].name == vac_obj.name
     assert vacans_sort_list[1].name == "name1"
 
 
