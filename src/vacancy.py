@@ -1,10 +1,20 @@
 from builtins import list
+from abc import ABC, abstractmethod
+class VacansABS(ABC):
+    """Абстрактный класс для работы с вакансиями"""
 
-# import os
-# import time
+    @abstractmethod
+    def __init__(self):
+        """инициализация"""
+        pass
+
+    @abstractmethod
+    def __str__(self):
+        """получение строковых значений"""
+        pass
 
 
-class Vacancy:
+class Vacancy(VacansABS):
     """
     Класс для работы с вакансиями
     """
@@ -37,6 +47,7 @@ class Vacancy:
         Vacancy.vac_list.append(self)
 
     def __str__(self):
+        """получение строковых значений объектов класса"""
         return (
             f"{self.name}\n"
             f"Id: {self.id}\n"
@@ -112,14 +123,3 @@ class Vacancy:
                 return False
                 # return self
 
-
-Vac1 = Vacancy(
-    10,
-    "name1",
-    "Город Н",
-    100,
-    None,
-    "https://gg.com",
-    "Уметь всё",
-    "Жить на работе",
-)
