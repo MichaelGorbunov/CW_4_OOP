@@ -124,3 +124,9 @@ class Vacancy(VacansABS):
             else:
                 return False
                 # return self
+
+    def __lt__(self, other):
+        """метод сравнения вакансий между собой"""
+        if isinstance(other, Vacancy) is True:
+            return self.salary_from < other.salary_from
+
