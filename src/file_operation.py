@@ -38,11 +38,30 @@ class FileOperation(FileChange):
 
     def write_file(self, data_list: list):
         with open(
-            os.path.join(DATA_DIR, self.__filename + ".vac"),
-            "w",
-            encoding="utf-8",
+                os.path.join(DATA_DIR, self.__filename + ".vac"),
+                "w",
+                encoding="utf-8",
         ) as f:
             json.dump(data_list, f, ensure_ascii=False, indent=4)
+
+    staticmethod
+
+    def delete_vacans_in_file(selected_file, id_list):
+        with open(selected_file, encoding="utf-8") as json_file:
+            data_list = json.load(json_file)
+            save_list = []
+        for item in data_list:
+
+            if item.get("id") not in id_list:
+                # print(item)
+                save_list.append(item)
+
+        with open(
+                os.path.join(selected_file),
+                "w",
+                encoding="utf-8",
+        ) as f:
+            json.dump(save_list, f, ensure_ascii=False, indent=4)
 
 
 def vac_file_list():
