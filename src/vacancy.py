@@ -130,3 +130,4 @@ class Vacancy(VacansABS):
         """метод сравнения вакансий между собой"""
         if isinstance(other, Vacancy) is True:
             return self.salary_from < other.salary_from
+        raise TypeError("сравнению подлежат элементы класса Vacancy")
