@@ -32,11 +32,13 @@ class FileOperation(FileChange):
         self.__filename = filename + "_" + datetime.now().strftime("%Y_%m_%d-%H_%M")
 
     def load_file(self):
+        """загрузка файла данных"""
         with open(self.__filename, encoding="utf-8") as json_file:
             data_list = json.load(json_file)
         return data_list
 
     def write_file(self, data_list: list):
+        """ запись списка данных в файл"""
         with open(
                 os.path.join(DATA_DIR, self.__filename + ".vac"),
                 "w",
