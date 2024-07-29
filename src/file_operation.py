@@ -46,7 +46,9 @@ class FileOperation(FileChange):
 
     staticmethod
 
-    def delete_vacans_in_file(selected_file, id_list):
+    def delete_vacans_in_file(selected_file: str, id_list: list):
+        """метод удаления из файла вакансий selected_file вакансий ,
+        с id  перечисленными в списке id_list"""
         with open(selected_file, encoding="utf-8") as json_file:
             data_list = json.load(json_file)
             save_list = []
