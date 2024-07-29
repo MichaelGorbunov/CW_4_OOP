@@ -1,12 +1,29 @@
 import json
 import os
+from abc import ABC, abstractmethod
 from datetime import datetime
 
 from config import DATA_DIR
 from src.vacancy import Vacancy
 
 
-class FileOperation:
+class FileChange(ABC):
+    """Работа с API платформ по поиску работы"""
+
+    @abstractmethod
+    def __init__(self):
+        pass
+
+    @abstractmethod
+    def load_file(self):
+        pass
+
+    @abstractmethod
+    def write_file(self):
+        pass
+
+
+class FileOperation(FileChange):
     """Работа с файлами"""
 
     def __init__(self, filename: str):
