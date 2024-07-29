@@ -83,7 +83,8 @@ class Vacancy(VacansABS):
 
         # cls.vac_list.sort(cls.vac_list, key=lambda x: x.salary_from, reverse=True)
         # key=lambda book: book.pages, reverse=True
-        cls.vac_list.sort(key=lambda x: x.salary_from, reverse=True)
+        # cls.vac_list.sort(key=lambda x: x.salary_from, reverse=True)
+        cls.vac_list.sort(reverse=True)
         return cls.vac_list
 
     @classmethod
@@ -129,4 +130,3 @@ class Vacancy(VacansABS):
         """метод сравнения вакансий между собой"""
         if isinstance(other, Vacancy) is True:
             return self.salary_from < other.salary_from
-
