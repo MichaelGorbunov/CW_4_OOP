@@ -29,16 +29,16 @@ class FileOperation(FileChange):
     def __init__(self, filename: str = "Vacans_list"):
         # if filename is None:
         #     filename = datetime.now().strftime("%Y_%m_%d-%H_%M")
-        self.filename = filename + "_" + datetime.now().strftime("%Y_%m_%d-%H_%M")
+        self.__filename = filename + "_" + datetime.now().strftime("%Y_%m_%d-%H_%M")
 
     def load_file(self):
-        with open(self.filename, encoding="utf-8") as json_file:
+        with open(self.__filename, encoding="utf-8") as json_file:
             data_list = json.load(json_file)
         return data_list
 
     def write_file(self, data_list: list):
         with open(
-            os.path.join(DATA_DIR, self.filename + ".vac"),
+            os.path.join(DATA_DIR, self.__filename + ".vac"),
             "w",
             encoding="utf-8",
         ) as f:
