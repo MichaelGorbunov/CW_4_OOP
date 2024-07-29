@@ -1,5 +1,7 @@
-from builtins import list
 from abc import ABC, abstractmethod
+from builtins import list
+
+
 class VacansABS(ABC):
     """Абстрактный класс для работы с вакансиями"""
 
@@ -122,4 +124,3 @@ class Vacancy(VacansABS):
             else:
                 return False
                 # return self
-

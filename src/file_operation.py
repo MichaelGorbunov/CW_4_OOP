@@ -26,7 +26,7 @@ class FileChange(ABC):
 class FileOperation(FileChange):
     """Работа с файлами"""
 
-    def __init__(self, filename: str):
+    def __init__(self, filename: str = "Vacans_list"):
         # if filename is None:
         #     filename = datetime.now().strftime("%Y_%m_%d-%H_%M")
         self.filename = filename + "_" + datetime.now().strftime("%Y_%m_%d-%H_%M")
