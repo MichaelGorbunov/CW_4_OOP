@@ -46,7 +46,12 @@ class FileOperation(FileChange):
         ) as f:
             json.dump(data_list, f, ensure_ascii=False, indent=4)
 
-    staticmethod
+    def delete_by_id(self, id_list: list):
+        data_list = self.load_file()
+        save_list = [vac_data for vac_data in data_list if vac_data.get('id') not in id_list]
+        self.write_file(save_list)
+
+    @staticmethod
     def delete_vacans_in_file(selected_file: str, id_list: list):
         """метод удаления из файла вакансий selected_file вакансий ,
         с id  перечисленными в списке id_list"""
